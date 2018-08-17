@@ -45,7 +45,7 @@ Task Generate.Version {
     $versionLastUpdated = git rev-list -1 HEAD $baseDir\version.txt
     $script:patchVersion = git rev-list "$versionLastUpdated..HEAD" --count
 
-    $branch = git name-rev --name-only HEAD
+    $branch = git symbolic-ref --short HEAD
     Write-Output "Branch   $branch"
 
     $commit = git rev-parse --short head
