@@ -1,0 +1,39 @@
+### YamlMime:TableOfContent
+- uid: Niche.GherkinSyntax
+  name: Niche.GherkinSyntax
+  items:
+  - uid: Niche.GherkinSyntax.GherkinFactory
+    name: GherkinFactory
+  - uid: Niche.GherkinSyntax.GivenSyntax`1
+    name: GivenSyntax<C>
+    name.vb: GivenSyntax(Of C)
+  - uid: Niche.GherkinSyntax.GivenSyntaxExtensions
+    name: GivenSyntaxExtensions
+  - uid: Niche.GherkinSyntax.IGivenSyntax`1
+    name: IGivenSyntax<C>
+    name.vb: IGivenSyntax(Of C)
+  - uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1
+    name: IGivenSyntaxAsync<C>
+    name.vb: IGivenSyntaxAsync(Of C)
+  - uid: Niche.GherkinSyntax.IThenSyntax`1
+    name: IThenSyntax<C>
+    name.vb: IThenSyntax(Of C)
+  - uid: Niche.GherkinSyntax.IThenSyntaxAsync`1
+    name: IThenSyntaxAsync<C>
+    name.vb: IThenSyntaxAsync(Of C)
+  - uid: Niche.GherkinSyntax.IWhenSyntax`1
+    name: IWhenSyntax<C>
+    name.vb: IWhenSyntax(Of C)
+  - uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1
+    name: IWhenSyntaxAsync<C>
+    name.vb: IWhenSyntaxAsync(Of C)
+  - uid: Niche.GherkinSyntax.ThenSyntax`1
+    name: ThenSyntax<C>
+    name.vb: ThenSyntax(Of C)
+  - uid: Niche.GherkinSyntax.ThenSyntaxExtensions
+    name: ThenSyntaxExtensions
+  - uid: Niche.GherkinSyntax.WhenSyntax`1
+    name: WhenSyntax<C>
+    name.vb: WhenSyntax(Of C)
+  - uid: Niche.GherkinSyntax.WhenSyntaxExtensions
+    name: WhenSyntaxExtensions

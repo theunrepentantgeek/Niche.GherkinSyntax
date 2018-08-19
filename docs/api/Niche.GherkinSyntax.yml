@@ -1,0 +1,379 @@
+### YamlMime:ManagedReference
+items:
+- uid: Niche.GherkinSyntax
+  commentId: N:Niche.GherkinSyntax
+  id: Niche.GherkinSyntax
+  children:
+  - Niche.GherkinSyntax.GherkinFactory
+  - Niche.GherkinSyntax.GivenSyntax`1
+  - Niche.GherkinSyntax.GivenSyntaxExtensions
+  - Niche.GherkinSyntax.IGivenSyntax`1
+  - Niche.GherkinSyntax.IGivenSyntaxAsync`1
+  - Niche.GherkinSyntax.IThenSyntax`1
+  - Niche.GherkinSyntax.IThenSyntaxAsync`1
+  - Niche.GherkinSyntax.IWhenSyntax`1
+  - Niche.GherkinSyntax.IWhenSyntaxAsync`1
+  - Niche.GherkinSyntax.ThenSyntax`1
+  - Niche.GherkinSyntax.ThenSyntaxExtensions
+  - Niche.GherkinSyntax.WhenSyntax`1
+  - Niche.GherkinSyntax.WhenSyntaxExtensions
+  langs:
+  - csharp
+  - vb
+  name: Niche.GherkinSyntax
+  nameWithType: Niche.GherkinSyntax
+  fullName: Niche.GherkinSyntax
+  type: Namespace
+  assemblies:
+  - Niche.GherkinSyntax
+references:
+- uid: Niche.GherkinSyntax.GherkinFactory
+  commentId: T:Niche.GherkinSyntax.GherkinFactory
+  name: GherkinFactory
+  nameWithType: GherkinFactory
+  fullName: Niche.GherkinSyntax.GherkinFactory
+- uid: Niche.GherkinSyntax.GivenSyntax`1
+  commentId: T:Niche.GherkinSyntax.GivenSyntax`1
+  name: GivenSyntax<C>
+  nameWithType: GivenSyntax<C>
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>
+  nameWithType.vb: GivenSyntax(Of C)
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C)
+  name.vb: GivenSyntax(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.GivenSyntax`1
+    name: GivenSyntax
+    nameWithType: GivenSyntax
+    fullName: Niche.GherkinSyntax.GivenSyntax
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.GivenSyntax`1
+    name: GivenSyntax
+    nameWithType: GivenSyntax
+    fullName: Niche.GherkinSyntax.GivenSyntax
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions
+  commentId: T:Niche.GherkinSyntax.GivenSyntaxExtensions
+  name: GivenSyntaxExtensions
+  nameWithType: GivenSyntaxExtensions
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions
+- uid: Niche.GherkinSyntax.IGivenSyntax`1
+  commentId: T:Niche.GherkinSyntax.IGivenSyntax`1
+  name: IGivenSyntax<C>
+  nameWithType: IGivenSyntax<C>
+  fullName: Niche.GherkinSyntax.IGivenSyntax<C>
+  nameWithType.vb: IGivenSyntax(Of C)
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntax(Of C)
+  name.vb: IGivenSyntax(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.IGivenSyntax`1
+    name: IGivenSyntax
+    nameWithType: IGivenSyntax
+    fullName: Niche.GherkinSyntax.IGivenSyntax
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.IGivenSyntax`1
+    name: IGivenSyntax
+    nameWithType: IGivenSyntax
+    fullName: Niche.GherkinSyntax.IGivenSyntax
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1
+  commentId: T:Niche.GherkinSyntax.IGivenSyntaxAsync`1
+  name: IGivenSyntaxAsync<C>
+  nameWithType: IGivenSyntaxAsync<C>
+  fullName: Niche.GherkinSyntax.IGivenSyntaxAsync<C>
+  nameWithType.vb: IGivenSyntaxAsync(Of C)
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntaxAsync(Of C)
+  name.vb: IGivenSyntaxAsync(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1
+    name: IGivenSyntaxAsync
+    nameWithType: IGivenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IGivenSyntaxAsync
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1
+    name: IGivenSyntaxAsync
+    nameWithType: IGivenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IGivenSyntaxAsync
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.IThenSyntax`1
+  commentId: T:Niche.GherkinSyntax.IThenSyntax`1
+  parent: Niche.GherkinSyntax
+  name: IThenSyntax<C>
+  nameWithType: IThenSyntax<C>
+  fullName: Niche.GherkinSyntax.IThenSyntax<C>
+  nameWithType.vb: IThenSyntax(Of C)
+  fullName.vb: Niche.GherkinSyntax.IThenSyntax(Of C)
+  name.vb: IThenSyntax(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.IThenSyntax`1
+    name: IThenSyntax
+    nameWithType: IThenSyntax
+    fullName: Niche.GherkinSyntax.IThenSyntax
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.IThenSyntax`1
+    name: IThenSyntax
+    nameWithType: IThenSyntax
+    fullName: Niche.GherkinSyntax.IThenSyntax
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.IThenSyntaxAsync`1
+  commentId: T:Niche.GherkinSyntax.IThenSyntaxAsync`1
+  name: IThenSyntaxAsync<C>
+  nameWithType: IThenSyntaxAsync<C>
+  fullName: Niche.GherkinSyntax.IThenSyntaxAsync<C>
+  nameWithType.vb: IThenSyntaxAsync(Of C)
+  fullName.vb: Niche.GherkinSyntax.IThenSyntaxAsync(Of C)
+  name.vb: IThenSyntaxAsync(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.IThenSyntaxAsync`1
+    name: IThenSyntaxAsync
+    nameWithType: IThenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IThenSyntaxAsync
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.IThenSyntaxAsync`1
+    name: IThenSyntaxAsync
+    nameWithType: IThenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IThenSyntaxAsync
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.IWhenSyntax`1
+  commentId: T:Niche.GherkinSyntax.IWhenSyntax`1
+  name: IWhenSyntax<C>
+  nameWithType: IWhenSyntax<C>
+  fullName: Niche.GherkinSyntax.IWhenSyntax<C>
+  nameWithType.vb: IWhenSyntax(Of C)
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntax(Of C)
+  name.vb: IWhenSyntax(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.IWhenSyntax`1
+    name: IWhenSyntax
+    nameWithType: IWhenSyntax
+    fullName: Niche.GherkinSyntax.IWhenSyntax
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.IWhenSyntax`1
+    name: IWhenSyntax
+    nameWithType: IWhenSyntax
+    fullName: Niche.GherkinSyntax.IWhenSyntax
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1
+  commentId: T:Niche.GherkinSyntax.IWhenSyntaxAsync`1
+  name: IWhenSyntaxAsync<C>
+  nameWithType: IWhenSyntaxAsync<C>
+  fullName: Niche.GherkinSyntax.IWhenSyntaxAsync<C>
+  nameWithType.vb: IWhenSyntaxAsync(Of C)
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntaxAsync(Of C)
+  name.vb: IWhenSyntaxAsync(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1
+    name: IWhenSyntaxAsync
+    nameWithType: IWhenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IWhenSyntaxAsync
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1
+    name: IWhenSyntaxAsync
+    nameWithType: IWhenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IWhenSyntaxAsync
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.ThenSyntax`1
+  commentId: T:Niche.GherkinSyntax.ThenSyntax`1
+  name: ThenSyntax<C>
+  nameWithType: ThenSyntax<C>
+  fullName: Niche.GherkinSyntax.ThenSyntax<C>
+  nameWithType.vb: ThenSyntax(Of C)
+  fullName.vb: Niche.GherkinSyntax.ThenSyntax(Of C)
+  name.vb: ThenSyntax(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.ThenSyntax`1
+    name: ThenSyntax
+    nameWithType: ThenSyntax
+    fullName: Niche.GherkinSyntax.ThenSyntax
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.ThenSyntax`1
+    name: ThenSyntax
+    nameWithType: ThenSyntax
+    fullName: Niche.GherkinSyntax.ThenSyntax
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.ThenSyntaxExtensions
+  commentId: T:Niche.GherkinSyntax.ThenSyntaxExtensions
+  name: ThenSyntaxExtensions
+  nameWithType: ThenSyntaxExtensions
+  fullName: Niche.GherkinSyntax.ThenSyntaxExtensions
+- uid: Niche.GherkinSyntax.WhenSyntax`1
+  commentId: T:Niche.GherkinSyntax.WhenSyntax`1
+  name: WhenSyntax<C>
+  nameWithType: WhenSyntax<C>
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>
+  nameWithType.vb: WhenSyntax(Of C)
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C)
+  name.vb: WhenSyntax(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.WhenSyntax`1
+    name: WhenSyntax
+    nameWithType: WhenSyntax
+    fullName: Niche.GherkinSyntax.WhenSyntax
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.WhenSyntax`1
+    name: WhenSyntax
+    nameWithType: WhenSyntax
+    fullName: Niche.GherkinSyntax.WhenSyntax
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.WhenSyntaxExtensions
+  commentId: T:Niche.GherkinSyntax.WhenSyntaxExtensions
+  name: WhenSyntaxExtensions
+  nameWithType: WhenSyntaxExtensions
+  fullName: Niche.GherkinSyntax.WhenSyntaxExtensions
+- uid: Niche.GherkinSyntax
+  commentId: N:Niche.GherkinSyntax
+  name: Niche.GherkinSyntax
+  nameWithType: Niche.GherkinSyntax
+  fullName: Niche.GherkinSyntax
