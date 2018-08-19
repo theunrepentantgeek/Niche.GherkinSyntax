@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Niche.GherkinSyntax.IThenSyntax`1
+  commentId: T:Niche.GherkinSyntax.IThenSyntax`1
+  id: IThenSyntax`1
+  parent: Niche.GherkinSyntax
+  children:
+  - Niche.GherkinSyntax.IThenSyntax`1.And(System.Action{`0})
+  langs:
+  - csharp
+  - vb
+  name: IThenSyntax<C>
+  nameWithType: IThenSyntax<C>
+  fullName: Niche.GherkinSyntax.IThenSyntax<C>
+  type: Interface
+  source:
+    remote:
+      path: src/Niche.GherkinSyntax/IThenSyntax.cs
+      branch: feature/api-documentation
+      repo: https://github.com/theunrepentantgeek/Niche.GherkinSyntax.git
+    id: IThenSyntax
+    path: ../src/Niche.GherkinSyntax/IThenSyntax.cs
+    startLine: 8
+  assemblies:
+  - Niche.GherkinSyntax
+  namespace: Niche.GherkinSyntax
+  summary: "\nDefines the syntax available after &apos;Then&apos;\n"
+  example: []
+  syntax:
+    content: public interface IThenSyntax<C>
+    typeParameters:
+    - id: C
+      description: Type of context available for verification actions.
+    content.vb: Public Interface IThenSyntax(Of C)
+  nameWithType.vb: IThenSyntax(Of C)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Niche.GherkinSyntax.IThenSyntax(Of C)
+  name.vb: IThenSyntax(Of C)
+- uid: Niche.GherkinSyntax.IThenSyntax`1.And(System.Action{`0})
+  commentId: M:Niche.GherkinSyntax.IThenSyntax`1.And(System.Action{`0})
+  id: And(System.Action{`0})
+  parent: Niche.GherkinSyntax.IThenSyntax`1
+  langs:
+  - csharp
+  - vb
+  name: And(Action<C>)
+  nameWithType: IThenSyntax<C>.And(Action<C>)
+  fullName: Niche.GherkinSyntax.IThenSyntax<C>.And(System.Action<C>)
+  type: Method
+  source:
+    remote:
+      path: src/Niche.GherkinSyntax/IThenSyntax.cs
+      branch: feature/api-documentation
+      repo: https://github.com/theunrepentantgeek/Niche.GherkinSyntax.git
+    id: And
+    path: ../src/Niche.GherkinSyntax/IThenSyntax.cs
+    startLine: 15
+  assemblies:
+  - Niche.GherkinSyntax
+  namespace: Niche.GherkinSyntax
+  summary: "\nApply another action to our context to verify the state\n"
+  example: []
+  syntax:
+    content: IThenSyntax<C> And(Action<C> action)
+    parameters:
+    - id: action
+      type: System.Action{{C}}
+      description: An action to verify state.
+    return:
+      type: Niche.GherkinSyntax.IThenSyntax`1
+      description: A syntax implementation for method chaining.
+    content.vb: Function And(action As Action(Of C)) As IThenSyntax(Of C)
+  overload: Niche.GherkinSyntax.IThenSyntax`1.And*
+  nameWithType.vb: IThenSyntax(Of C).And(Action(Of C))
+  fullName.vb: Niche.GherkinSyntax.IThenSyntax(Of C).And(System.Action(Of C))
+  name.vb: And(Action(Of C))
+references:
+- uid: Niche.GherkinSyntax
+  commentId: N:Niche.GherkinSyntax
+  name: Niche.GherkinSyntax
+  nameWithType: Niche.GherkinSyntax
+  fullName: Niche.GherkinSyntax
+- uid: Niche.GherkinSyntax.IThenSyntax`1.And*
+  commentId: Overload:Niche.GherkinSyntax.IThenSyntax`1.And
+  name: And
+  nameWithType: IThenSyntax<C>.And
+  fullName: Niche.GherkinSyntax.IThenSyntax<C>.And
+  nameWithType.vb: IThenSyntax(Of C).And
+  fullName.vb: Niche.GherkinSyntax.IThenSyntax(Of C).And
+- uid: System.Action{{C}}
+  commentId: T:System.Action{`0}
+  parent: System
+  definition: System.Action`1
+  name: Action<C>
+  nameWithType: Action<C>
+  fullName: System.Action<C>
+  nameWithType.vb: Action(Of C)
+  fullName.vb: System.Action(Of C)
+  name.vb: Action(Of C)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.IThenSyntax`1
+  commentId: T:Niche.GherkinSyntax.IThenSyntax`1
+  parent: Niche.GherkinSyntax
+  name: IThenSyntax<C>
+  nameWithType: IThenSyntax<C>
+  fullName: Niche.GherkinSyntax.IThenSyntax<C>
+  nameWithType.vb: IThenSyntax(Of C)
+  fullName.vb: Niche.GherkinSyntax.IThenSyntax(Of C)
+  name.vb: IThenSyntax(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.IThenSyntax`1
+    name: IThenSyntax
+    nameWithType: IThenSyntax
+    fullName: Niche.GherkinSyntax.IThenSyntax
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.IThenSyntax`1
+    name: IThenSyntax
+    nameWithType: IThenSyntax
+    fullName: Niche.GherkinSyntax.IThenSyntax
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

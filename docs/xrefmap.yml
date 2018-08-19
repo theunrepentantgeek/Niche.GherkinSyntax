@@ -1,0 +1,697 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Niche.GherkinSyntax
+  name: Niche.GherkinSyntax
+  href: api/Niche.GherkinSyntax.html
+  commentId: N:Niche.GherkinSyntax
+  fullName: Niche.GherkinSyntax
+  nameWithType: Niche.GherkinSyntax
+- uid: Niche.GherkinSyntax.GherkinFactory
+  name: GherkinFactory
+  href: api/Niche.GherkinSyntax.GherkinFactory.html
+  commentId: T:Niche.GherkinSyntax.GherkinFactory
+  fullName: Niche.GherkinSyntax.GherkinFactory
+  nameWithType: GherkinFactory
+- uid: Niche.GherkinSyntax.GherkinFactory.Given*
+  name: Given
+  href: api/Niche.GherkinSyntax.GherkinFactory.html#Niche_GherkinSyntax_GherkinFactory_Given_
+  commentId: Overload:Niche.GherkinSyntax.GherkinFactory.Given
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.GherkinFactory.Given
+  nameWithType: GherkinFactory.Given
+- uid: Niche.GherkinSyntax.GherkinFactory.Given``1(System.Func{``0})
+  name: Given<C>(Func<C>)
+  href: api/Niche.GherkinSyntax.GherkinFactory.html#Niche_GherkinSyntax_GherkinFactory_Given__1_System_Func___0__
+  commentId: M:Niche.GherkinSyntax.GherkinFactory.Given``1(System.Func{``0})
+  name.vb: Given(Of C)(Func(Of C))
+  fullName: Niche.GherkinSyntax.GherkinFactory.Given<C>(System.Func<C>)
+  fullName.vb: Niche.GherkinSyntax.GherkinFactory.Given(Of C)(System.Func(Of C))
+  nameWithType: GherkinFactory.Given<C>(Func<C>)
+  nameWithType.vb: GherkinFactory.Given(Of C)(Func(Of C))
+- uid: Niche.GherkinSyntax.GherkinFactory.GivenAsync*
+  name: GivenAsync
+  href: api/Niche.GherkinSyntax.GherkinFactory.html#Niche_GherkinSyntax_GherkinFactory_GivenAsync_
+  commentId: Overload:Niche.GherkinSyntax.GherkinFactory.GivenAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.GherkinFactory.GivenAsync
+  nameWithType: GherkinFactory.GivenAsync
+- uid: Niche.GherkinSyntax.GherkinFactory.GivenAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
+  name: GivenAsync<C>(Func<Task<C>>)
+  href: api/Niche.GherkinSyntax.GherkinFactory.html#Niche_GherkinSyntax_GherkinFactory_GivenAsync__1_System_Func_System_Threading_Tasks_Task___0___
+  commentId: M:Niche.GherkinSyntax.GherkinFactory.GivenAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
+  name.vb: GivenAsync(Of C)(Func(Of Task(Of C)))
+  fullName: Niche.GherkinSyntax.GherkinFactory.GivenAsync<C>(System.Func<System.Threading.Tasks.Task<C>>)
+  fullName.vb: Niche.GherkinSyntax.GherkinFactory.GivenAsync(Of C)(System.Func(Of System.Threading.Tasks.Task(Of C)))
+  nameWithType: GherkinFactory.GivenAsync<C>(Func<Task<C>>)
+  nameWithType.vb: GherkinFactory.GivenAsync(Of C)(Func(Of Task(Of C)))
+- uid: Niche.GherkinSyntax.GivenSyntax`1
+  name: GivenSyntax<C>
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html
+  commentId: T:Niche.GherkinSyntax.GivenSyntax`1
+  name.vb: GivenSyntax(Of C)
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C)
+  nameWithType: GivenSyntax<C>
+  nameWithType.vb: GivenSyntax(Of C)
+- uid: Niche.GherkinSyntax.GivenSyntax`1.#ctor(`0)
+  name: GivenSyntax(C)
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1__ctor__0_
+  commentId: M:Niche.GherkinSyntax.GivenSyntax`1.#ctor(`0)
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.GivenSyntax(C)
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).GivenSyntax(C)
+  nameWithType: GivenSyntax<C>.GivenSyntax(C)
+  nameWithType.vb: GivenSyntax(Of C).GivenSyntax(C)
+- uid: Niche.GherkinSyntax.GivenSyntax`1.#ctor*
+  name: GivenSyntax
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1__ctor_
+  commentId: Overload:Niche.GherkinSyntax.GivenSyntax`1.#ctor
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.GivenSyntax
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).GivenSyntax
+  nameWithType: GivenSyntax<C>.GivenSyntax
+  nameWithType.vb: GivenSyntax(Of C).GivenSyntax
+- uid: Niche.GherkinSyntax.GivenSyntax`1.And*
+  name: And
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1_And_
+  commentId: Overload:Niche.GherkinSyntax.GivenSyntax`1.And
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.And
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).And
+  nameWithType: GivenSyntax<C>.And
+  nameWithType.vb: GivenSyntax(Of C).And
+- uid: Niche.GherkinSyntax.GivenSyntax`1.And``1(System.Func{`0,``0})
+  name: And<R>(Func<C, R>)
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1_And__1_System_Func__0___0__
+  commentId: M:Niche.GherkinSyntax.GivenSyntax`1.And``1(System.Func{`0,``0})
+  name.vb: And(Of R)(Func(Of C, R))
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.And<R>(System.Func<C, R>)
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).And(Of R)(System.Func(Of C, R))
+  nameWithType: GivenSyntax<C>.And<R>(Func<C, R>)
+  nameWithType.vb: GivenSyntax(Of C).And(Of R)(Func(Of C, R))
+- uid: Niche.GherkinSyntax.GivenSyntax`1.AndAsync*
+  name: AndAsync
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1_AndAsync_
+  commentId: Overload:Niche.GherkinSyntax.GivenSyntax`1.AndAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.AndAsync
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).AndAsync
+  nameWithType: GivenSyntax<C>.AndAsync
+  nameWithType.vb: GivenSyntax(Of C).AndAsync
+- uid: Niche.GherkinSyntax.GivenSyntax`1.AndAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name: AndAsync<R>(Func<C, Task<R>>)
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1_AndAsync__1_System_Func__0_System_Threading_Tasks_Task___0___
+  commentId: M:Niche.GherkinSyntax.GivenSyntax`1.AndAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name.vb: AndAsync(Of R)(Func(Of C, Task(Of R)))
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.AndAsync<R>(System.Func<C, System.Threading.Tasks.Task<R>>)
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).AndAsync(Of R)(System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  nameWithType: GivenSyntax<C>.AndAsync<R>(Func<C, Task<R>>)
+  nameWithType.vb: GivenSyntax(Of C).AndAsync(Of R)(Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.GivenSyntax`1.Context
+  name: Context
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1_Context
+  commentId: P:Niche.GherkinSyntax.GivenSyntax`1.Context
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.Context
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).Context
+  nameWithType: GivenSyntax<C>.Context
+  nameWithType.vb: GivenSyntax(Of C).Context
+- uid: Niche.GherkinSyntax.GivenSyntax`1.Context*
+  name: Context
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1_Context_
+  commentId: Overload:Niche.GherkinSyntax.GivenSyntax`1.Context
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.Context
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).Context
+  nameWithType: GivenSyntax<C>.Context
+  nameWithType.vb: GivenSyntax(Of C).Context
+- uid: Niche.GherkinSyntax.GivenSyntax`1.When*
+  name: When
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1_When_
+  commentId: Overload:Niche.GherkinSyntax.GivenSyntax`1.When
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.When
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).When
+  nameWithType: GivenSyntax<C>.When
+  nameWithType.vb: GivenSyntax(Of C).When
+- uid: Niche.GherkinSyntax.GivenSyntax`1.When``1(System.Func{`0,``0})
+  name: When<R>(Func<C, R>)
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1_When__1_System_Func__0___0__
+  commentId: M:Niche.GherkinSyntax.GivenSyntax`1.When``1(System.Func{`0,``0})
+  name.vb: When(Of R)(Func(Of C, R))
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.When<R>(System.Func<C, R>)
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).When(Of R)(System.Func(Of C, R))
+  nameWithType: GivenSyntax<C>.When<R>(Func<C, R>)
+  nameWithType.vb: GivenSyntax(Of C).When(Of R)(Func(Of C, R))
+- uid: Niche.GherkinSyntax.GivenSyntax`1.WhenAsync*
+  name: WhenAsync
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1_WhenAsync_
+  commentId: Overload:Niche.GherkinSyntax.GivenSyntax`1.WhenAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.WhenAsync
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).WhenAsync
+  nameWithType: GivenSyntax<C>.WhenAsync
+  nameWithType.vb: GivenSyntax(Of C).WhenAsync
+- uid: Niche.GherkinSyntax.GivenSyntax`1.WhenAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name: WhenAsync<R>(Func<C, Task<R>>)
+  href: api/Niche.GherkinSyntax.GivenSyntax-1.html#Niche_GherkinSyntax_GivenSyntax_1_WhenAsync__1_System_Func__0_System_Threading_Tasks_Task___0___
+  commentId: M:Niche.GherkinSyntax.GivenSyntax`1.WhenAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name.vb: WhenAsync(Of R)(Func(Of C, Task(Of R)))
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>.WhenAsync<R>(System.Func<C, System.Threading.Tasks.Task<R>>)
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C).WhenAsync(Of R)(System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  nameWithType: GivenSyntax<C>.WhenAsync<R>(Func<C, Task<R>>)
+  nameWithType.vb: GivenSyntax(Of C).WhenAsync(Of R)(Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions
+  name: GivenSyntaxExtensions
+  href: api/Niche.GherkinSyntax.GivenSyntaxExtensions.html
+  commentId: T:Niche.GherkinSyntax.GivenSyntaxExtensions
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions
+  nameWithType: GivenSyntaxExtensions
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync*
+  name: AndAsync
+  href: api/Niche.GherkinSyntax.GivenSyntaxExtensions.html#Niche_GherkinSyntax_GivenSyntaxExtensions_AndAsync_
+  commentId: Overload:Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync
+  nameWithType: GivenSyntaxExtensions.AndAsync
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  name: AndAsync<C, R>(Task<IGivenSyntaxAsync<C>>, Func<C, Task<R>>)
+  href: api/Niche.GherkinSyntax.GivenSyntaxExtensions.html#Niche_GherkinSyntax_GivenSyntaxExtensions_AndAsync__2_System_Threading_Tasks_Task_Niche_GherkinSyntax_IGivenSyntaxAsync___0___System_Func___0_System_Threading_Tasks_Task___1___
+  commentId: M:Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  name.vb: AndAsync(Of C, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, Task(Of R)))
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync<C, R>(System.Threading.Tasks.Task<Niche.GherkinSyntax.IGivenSyntaxAsync<C>>, System.Func<C, System.Threading.Tasks.Task<R>>)
+  fullName.vb: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync(Of C, R)(System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IGivenSyntaxAsync(Of C)), System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  nameWithType: GivenSyntaxExtensions.AndAsync<C, R>(Task<IGivenSyntaxAsync<C>>, Func<C, Task<R>>)
+  nameWithType.vb: GivenSyntaxExtensions.AndAsync(Of C, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync*
+  name: WhenAsync
+  href: api/Niche.GherkinSyntax.GivenSyntaxExtensions.html#Niche_GherkinSyntax_GivenSyntaxExtensions_WhenAsync_
+  commentId: Overload:Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync
+  nameWithType: GivenSyntaxExtensions.WhenAsync
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  name: WhenAsync<C, R>(Task<IGivenSyntaxAsync<C>>, Func<C, Task<R>>)
+  href: api/Niche.GherkinSyntax.GivenSyntaxExtensions.html#Niche_GherkinSyntax_GivenSyntaxExtensions_WhenAsync__2_System_Threading_Tasks_Task_Niche_GherkinSyntax_IGivenSyntaxAsync___0___System_Func___0_System_Threading_Tasks_Task___1___
+  commentId: M:Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  name.vb: WhenAsync(Of C, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, Task(Of R)))
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync<C, R>(System.Threading.Tasks.Task<Niche.GherkinSyntax.IGivenSyntaxAsync<C>>, System.Func<C, System.Threading.Tasks.Task<R>>)
+  fullName.vb: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync(Of C, R)(System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IGivenSyntaxAsync(Of C)), System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  nameWithType: GivenSyntaxExtensions.WhenAsync<C, R>(Task<IGivenSyntaxAsync<C>>, Func<C, Task<R>>)
+  nameWithType.vb: GivenSyntaxExtensions.WhenAsync(Of C, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync``3(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,``1,System.Threading.Tasks.Task{``2}},``1)
+  name: WhenAsync<C, P, R>(Task<IGivenSyntaxAsync<C>>, Func<C, P, Task<R>>, P)
+  href: api/Niche.GherkinSyntax.GivenSyntaxExtensions.html#Niche_GherkinSyntax_GivenSyntaxExtensions_WhenAsync__3_System_Threading_Tasks_Task_Niche_GherkinSyntax_IGivenSyntaxAsync___0___System_Func___0___1_System_Threading_Tasks_Task___2_____1_
+  commentId: M:Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync``3(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,``1,System.Threading.Tasks.Task{``2}},``1)
+  name.vb: WhenAsync(Of C, P, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, P, Task(Of R)), P)
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync<C, P, R>(System.Threading.Tasks.Task<Niche.GherkinSyntax.IGivenSyntaxAsync<C>>, System.Func<C, P, System.Threading.Tasks.Task<R>>, P)
+  fullName.vb: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync(Of C, P, R)(System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IGivenSyntaxAsync(Of C)), System.Func(Of C, P, System.Threading.Tasks.Task(Of R)), P)
+  nameWithType: GivenSyntaxExtensions.WhenAsync<C, P, R>(Task<IGivenSyntaxAsync<C>>, Func<C, P, Task<R>>, P)
+  nameWithType.vb: GivenSyntaxExtensions.WhenAsync(Of C, P, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, P, Task(Of R)), P)
+- uid: Niche.GherkinSyntax.IGivenSyntax`1
+  name: IGivenSyntax<C>
+  href: api/Niche.GherkinSyntax.IGivenSyntax-1.html
+  commentId: T:Niche.GherkinSyntax.IGivenSyntax`1
+  name.vb: IGivenSyntax(Of C)
+  fullName: Niche.GherkinSyntax.IGivenSyntax<C>
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntax(Of C)
+  nameWithType: IGivenSyntax<C>
+  nameWithType.vb: IGivenSyntax(Of C)
+- uid: Niche.GherkinSyntax.IGivenSyntax`1.And*
+  name: And
+  href: api/Niche.GherkinSyntax.IGivenSyntax-1.html#Niche_GherkinSyntax_IGivenSyntax_1_And_
+  commentId: Overload:Niche.GherkinSyntax.IGivenSyntax`1.And
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.IGivenSyntax<C>.And
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntax(Of C).And
+  nameWithType: IGivenSyntax<C>.And
+  nameWithType.vb: IGivenSyntax(Of C).And
+- uid: Niche.GherkinSyntax.IGivenSyntax`1.And``1(System.Func{`0,``0})
+  name: And<R>(Func<C, R>)
+  href: api/Niche.GherkinSyntax.IGivenSyntax-1.html#Niche_GherkinSyntax_IGivenSyntax_1_And__1_System_Func__0___0__
+  commentId: M:Niche.GherkinSyntax.IGivenSyntax`1.And``1(System.Func{`0,``0})
+  name.vb: And(Of R)(Func(Of C, R))
+  fullName: Niche.GherkinSyntax.IGivenSyntax<C>.And<R>(System.Func<C, R>)
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntax(Of C).And(Of R)(System.Func(Of C, R))
+  nameWithType: IGivenSyntax<C>.And<R>(Func<C, R>)
+  nameWithType.vb: IGivenSyntax(Of C).And(Of R)(Func(Of C, R))
+- uid: Niche.GherkinSyntax.IGivenSyntax`1.When*
+  name: When
+  href: api/Niche.GherkinSyntax.IGivenSyntax-1.html#Niche_GherkinSyntax_IGivenSyntax_1_When_
+  commentId: Overload:Niche.GherkinSyntax.IGivenSyntax`1.When
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.IGivenSyntax<C>.When
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntax(Of C).When
+  nameWithType: IGivenSyntax<C>.When
+  nameWithType.vb: IGivenSyntax(Of C).When
+- uid: Niche.GherkinSyntax.IGivenSyntax`1.When``1(System.Func{`0,``0})
+  name: When<R>(Func<C, R>)
+  href: api/Niche.GherkinSyntax.IGivenSyntax-1.html#Niche_GherkinSyntax_IGivenSyntax_1_When__1_System_Func__0___0__
+  commentId: M:Niche.GherkinSyntax.IGivenSyntax`1.When``1(System.Func{`0,``0})
+  name.vb: When(Of R)(Func(Of C, R))
+  fullName: Niche.GherkinSyntax.IGivenSyntax<C>.When<R>(System.Func<C, R>)
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntax(Of C).When(Of R)(System.Func(Of C, R))
+  nameWithType: IGivenSyntax<C>.When<R>(Func<C, R>)
+  nameWithType.vb: IGivenSyntax(Of C).When(Of R)(Func(Of C, R))
+- uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1
+  name: IGivenSyntaxAsync<C>
+  href: api/Niche.GherkinSyntax.IGivenSyntaxAsync-1.html
+  commentId: T:Niche.GherkinSyntax.IGivenSyntaxAsync`1
+  name.vb: IGivenSyntaxAsync(Of C)
+  fullName: Niche.GherkinSyntax.IGivenSyntaxAsync<C>
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntaxAsync(Of C)
+  nameWithType: IGivenSyntaxAsync<C>
+  nameWithType.vb: IGivenSyntaxAsync(Of C)
+- uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1.AndAsync*
+  name: AndAsync
+  href: api/Niche.GherkinSyntax.IGivenSyntaxAsync-1.html#Niche_GherkinSyntax_IGivenSyntaxAsync_1_AndAsync_
+  commentId: Overload:Niche.GherkinSyntax.IGivenSyntaxAsync`1.AndAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.IGivenSyntaxAsync<C>.AndAsync
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntaxAsync(Of C).AndAsync
+  nameWithType: IGivenSyntaxAsync<C>.AndAsync
+  nameWithType.vb: IGivenSyntaxAsync(Of C).AndAsync
+- uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1.AndAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name: AndAsync<R>(Func<C, Task<R>>)
+  href: api/Niche.GherkinSyntax.IGivenSyntaxAsync-1.html#Niche_GherkinSyntax_IGivenSyntaxAsync_1_AndAsync__1_System_Func__0_System_Threading_Tasks_Task___0___
+  commentId: M:Niche.GherkinSyntax.IGivenSyntaxAsync`1.AndAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name.vb: AndAsync(Of R)(Func(Of C, Task(Of R)))
+  fullName: Niche.GherkinSyntax.IGivenSyntaxAsync<C>.AndAsync<R>(System.Func<C, System.Threading.Tasks.Task<R>>)
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntaxAsync(Of C).AndAsync(Of R)(System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  nameWithType: IGivenSyntaxAsync<C>.AndAsync<R>(Func<C, Task<R>>)
+  nameWithType.vb: IGivenSyntaxAsync(Of C).AndAsync(Of R)(Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1.WhenAsync*
+  name: WhenAsync
+  href: api/Niche.GherkinSyntax.IGivenSyntaxAsync-1.html#Niche_GherkinSyntax_IGivenSyntaxAsync_1_WhenAsync_
+  commentId: Overload:Niche.GherkinSyntax.IGivenSyntaxAsync`1.WhenAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.IGivenSyntaxAsync<C>.WhenAsync
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntaxAsync(Of C).WhenAsync
+  nameWithType: IGivenSyntaxAsync<C>.WhenAsync
+  nameWithType.vb: IGivenSyntaxAsync(Of C).WhenAsync
+- uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1.WhenAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name: WhenAsync<R>(Func<C, Task<R>>)
+  href: api/Niche.GherkinSyntax.IGivenSyntaxAsync-1.html#Niche_GherkinSyntax_IGivenSyntaxAsync_1_WhenAsync__1_System_Func__0_System_Threading_Tasks_Task___0___
+  commentId: M:Niche.GherkinSyntax.IGivenSyntaxAsync`1.WhenAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name.vb: WhenAsync(Of R)(Func(Of C, Task(Of R)))
+  fullName: Niche.GherkinSyntax.IGivenSyntaxAsync<C>.WhenAsync<R>(System.Func<C, System.Threading.Tasks.Task<R>>)
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntaxAsync(Of C).WhenAsync(Of R)(System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  nameWithType: IGivenSyntaxAsync<C>.WhenAsync<R>(Func<C, Task<R>>)
+  nameWithType.vb: IGivenSyntaxAsync(Of C).WhenAsync(Of R)(Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.IThenSyntax`1
+  name: IThenSyntax<C>
+  href: api/Niche.GherkinSyntax.IThenSyntax-1.html
+  commentId: T:Niche.GherkinSyntax.IThenSyntax`1
+  name.vb: IThenSyntax(Of C)
+  fullName: Niche.GherkinSyntax.IThenSyntax<C>
+  fullName.vb: Niche.GherkinSyntax.IThenSyntax(Of C)
+  nameWithType: IThenSyntax<C>
+  nameWithType.vb: IThenSyntax(Of C)
+- uid: Niche.GherkinSyntax.IThenSyntax`1.And(System.Action{`0})
+  name: And(Action<C>)
+  href: api/Niche.GherkinSyntax.IThenSyntax-1.html#Niche_GherkinSyntax_IThenSyntax_1_And_System_Action__0__
+  commentId: M:Niche.GherkinSyntax.IThenSyntax`1.And(System.Action{`0})
+  name.vb: And(Action(Of C))
+  fullName: Niche.GherkinSyntax.IThenSyntax<C>.And(System.Action<C>)
+  fullName.vb: Niche.GherkinSyntax.IThenSyntax(Of C).And(System.Action(Of C))
+  nameWithType: IThenSyntax<C>.And(Action<C>)
+  nameWithType.vb: IThenSyntax(Of C).And(Action(Of C))
+- uid: Niche.GherkinSyntax.IThenSyntax`1.And*
+  name: And
+  href: api/Niche.GherkinSyntax.IThenSyntax-1.html#Niche_GherkinSyntax_IThenSyntax_1_And_
+  commentId: Overload:Niche.GherkinSyntax.IThenSyntax`1.And
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.IThenSyntax<C>.And
+  fullName.vb: Niche.GherkinSyntax.IThenSyntax(Of C).And
+  nameWithType: IThenSyntax<C>.And
+  nameWithType.vb: IThenSyntax(Of C).And
+- uid: Niche.GherkinSyntax.IThenSyntaxAsync`1
+  name: IThenSyntaxAsync<C>
+  href: api/Niche.GherkinSyntax.IThenSyntaxAsync-1.html
+  commentId: T:Niche.GherkinSyntax.IThenSyntaxAsync`1
+  name.vb: IThenSyntaxAsync(Of C)
+  fullName: Niche.GherkinSyntax.IThenSyntaxAsync<C>
+  fullName.vb: Niche.GherkinSyntax.IThenSyntaxAsync(Of C)
+  nameWithType: IThenSyntaxAsync<C>
+  nameWithType.vb: IThenSyntaxAsync(Of C)
+- uid: Niche.GherkinSyntax.IThenSyntaxAsync`1.AndAsync(System.Func{`0,System.Threading.Tasks.Task})
+  name: AndAsync(Func<C, Task>)
+  href: api/Niche.GherkinSyntax.IThenSyntaxAsync-1.html#Niche_GherkinSyntax_IThenSyntaxAsync_1_AndAsync_System_Func__0_System_Threading_Tasks_Task__
+  commentId: M:Niche.GherkinSyntax.IThenSyntaxAsync`1.AndAsync(System.Func{`0,System.Threading.Tasks.Task})
+  name.vb: AndAsync(Func(Of C, Task))
+  fullName: Niche.GherkinSyntax.IThenSyntaxAsync<C>.AndAsync(System.Func<C, System.Threading.Tasks.Task>)
+  fullName.vb: Niche.GherkinSyntax.IThenSyntaxAsync(Of C).AndAsync(System.Func(Of C, System.Threading.Tasks.Task))
+  nameWithType: IThenSyntaxAsync<C>.AndAsync(Func<C, Task>)
+  nameWithType.vb: IThenSyntaxAsync(Of C).AndAsync(Func(Of C, Task))
+- uid: Niche.GherkinSyntax.IThenSyntaxAsync`1.AndAsync*
+  name: AndAsync
+  href: api/Niche.GherkinSyntax.IThenSyntaxAsync-1.html#Niche_GherkinSyntax_IThenSyntaxAsync_1_AndAsync_
+  commentId: Overload:Niche.GherkinSyntax.IThenSyntaxAsync`1.AndAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.IThenSyntaxAsync<C>.AndAsync
+  fullName.vb: Niche.GherkinSyntax.IThenSyntaxAsync(Of C).AndAsync
+  nameWithType: IThenSyntaxAsync<C>.AndAsync
+  nameWithType.vb: IThenSyntaxAsync(Of C).AndAsync
+- uid: Niche.GherkinSyntax.IWhenSyntax`1
+  name: IWhenSyntax<C>
+  href: api/Niche.GherkinSyntax.IWhenSyntax-1.html
+  commentId: T:Niche.GherkinSyntax.IWhenSyntax`1
+  name.vb: IWhenSyntax(Of C)
+  fullName: Niche.GherkinSyntax.IWhenSyntax<C>
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntax(Of C)
+  nameWithType: IWhenSyntax<C>
+  nameWithType.vb: IWhenSyntax(Of C)
+- uid: Niche.GherkinSyntax.IWhenSyntax`1.And*
+  name: And
+  href: api/Niche.GherkinSyntax.IWhenSyntax-1.html#Niche_GherkinSyntax_IWhenSyntax_1_And_
+  commentId: Overload:Niche.GherkinSyntax.IWhenSyntax`1.And
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.IWhenSyntax<C>.And
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntax(Of C).And
+  nameWithType: IWhenSyntax<C>.And
+  nameWithType.vb: IWhenSyntax(Of C).And
+- uid: Niche.GherkinSyntax.IWhenSyntax`1.And``1(System.Func{`0,``0})
+  name: And<R>(Func<C, R>)
+  href: api/Niche.GherkinSyntax.IWhenSyntax-1.html#Niche_GherkinSyntax_IWhenSyntax_1_And__1_System_Func__0___0__
+  commentId: M:Niche.GherkinSyntax.IWhenSyntax`1.And``1(System.Func{`0,``0})
+  name.vb: And(Of R)(Func(Of C, R))
+  fullName: Niche.GherkinSyntax.IWhenSyntax<C>.And<R>(System.Func<C, R>)
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntax(Of C).And(Of R)(System.Func(Of C, R))
+  nameWithType: IWhenSyntax<C>.And<R>(Func<C, R>)
+  nameWithType.vb: IWhenSyntax(Of C).And(Of R)(Func(Of C, R))
+- uid: Niche.GherkinSyntax.IWhenSyntax`1.Then(System.Action{`0})
+  name: Then(Action<C>)
+  href: api/Niche.GherkinSyntax.IWhenSyntax-1.html#Niche_GherkinSyntax_IWhenSyntax_1_Then_System_Action__0__
+  commentId: M:Niche.GherkinSyntax.IWhenSyntax`1.Then(System.Action{`0})
+  name.vb: Then(Action(Of C))
+  fullName: Niche.GherkinSyntax.IWhenSyntax<C>.Then(System.Action<C>)
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntax(Of C).Then(System.Action(Of C))
+  nameWithType: IWhenSyntax<C>.Then(Action<C>)
+  nameWithType.vb: IWhenSyntax(Of C).Then(Action(Of C))
+- uid: Niche.GherkinSyntax.IWhenSyntax`1.Then*
+  name: Then
+  href: api/Niche.GherkinSyntax.IWhenSyntax-1.html#Niche_GherkinSyntax_IWhenSyntax_1_Then_
+  commentId: Overload:Niche.GherkinSyntax.IWhenSyntax`1.Then
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.IWhenSyntax<C>.Then
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntax(Of C).Then
+  nameWithType: IWhenSyntax<C>.Then
+  nameWithType.vb: IWhenSyntax(Of C).Then
+- uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1
+  name: IWhenSyntaxAsync<C>
+  href: api/Niche.GherkinSyntax.IWhenSyntaxAsync-1.html
+  commentId: T:Niche.GherkinSyntax.IWhenSyntaxAsync`1
+  name.vb: IWhenSyntaxAsync(Of C)
+  fullName: Niche.GherkinSyntax.IWhenSyntaxAsync<C>
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntaxAsync(Of C)
+  nameWithType: IWhenSyntaxAsync<C>
+  nameWithType.vb: IWhenSyntaxAsync(Of C)
+- uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1.AndAsync*
+  name: AndAsync
+  href: api/Niche.GherkinSyntax.IWhenSyntaxAsync-1.html#Niche_GherkinSyntax_IWhenSyntaxAsync_1_AndAsync_
+  commentId: Overload:Niche.GherkinSyntax.IWhenSyntaxAsync`1.AndAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.IWhenSyntaxAsync<C>.AndAsync
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntaxAsync(Of C).AndAsync
+  nameWithType: IWhenSyntaxAsync<C>.AndAsync
+  nameWithType.vb: IWhenSyntaxAsync(Of C).AndAsync
+- uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1.AndAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name: AndAsync<R>(Func<C, Task<R>>)
+  href: api/Niche.GherkinSyntax.IWhenSyntaxAsync-1.html#Niche_GherkinSyntax_IWhenSyntaxAsync_1_AndAsync__1_System_Func__0_System_Threading_Tasks_Task___0___
+  commentId: M:Niche.GherkinSyntax.IWhenSyntaxAsync`1.AndAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name.vb: AndAsync(Of R)(Func(Of C, Task(Of R)))
+  fullName: Niche.GherkinSyntax.IWhenSyntaxAsync<C>.AndAsync<R>(System.Func<C, System.Threading.Tasks.Task<R>>)
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntaxAsync(Of C).AndAsync(Of R)(System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  nameWithType: IWhenSyntaxAsync<C>.AndAsync<R>(Func<C, Task<R>>)
+  nameWithType.vb: IWhenSyntaxAsync(Of C).AndAsync(Of R)(Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1.ThenAsync(System.Func{`0,System.Threading.Tasks.Task})
+  name: ThenAsync(Func<C, Task>)
+  href: api/Niche.GherkinSyntax.IWhenSyntaxAsync-1.html#Niche_GherkinSyntax_IWhenSyntaxAsync_1_ThenAsync_System_Func__0_System_Threading_Tasks_Task__
+  commentId: M:Niche.GherkinSyntax.IWhenSyntaxAsync`1.ThenAsync(System.Func{`0,System.Threading.Tasks.Task})
+  name.vb: ThenAsync(Func(Of C, Task))
+  fullName: Niche.GherkinSyntax.IWhenSyntaxAsync<C>.ThenAsync(System.Func<C, System.Threading.Tasks.Task>)
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntaxAsync(Of C).ThenAsync(System.Func(Of C, System.Threading.Tasks.Task))
+  nameWithType: IWhenSyntaxAsync<C>.ThenAsync(Func<C, Task>)
+  nameWithType.vb: IWhenSyntaxAsync(Of C).ThenAsync(Func(Of C, Task))
+- uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1.ThenAsync*
+  name: ThenAsync
+  href: api/Niche.GherkinSyntax.IWhenSyntaxAsync-1.html#Niche_GherkinSyntax_IWhenSyntaxAsync_1_ThenAsync_
+  commentId: Overload:Niche.GherkinSyntax.IWhenSyntaxAsync`1.ThenAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.IWhenSyntaxAsync<C>.ThenAsync
+  fullName.vb: Niche.GherkinSyntax.IWhenSyntaxAsync(Of C).ThenAsync
+  nameWithType: IWhenSyntaxAsync<C>.ThenAsync
+  nameWithType.vb: IWhenSyntaxAsync(Of C).ThenAsync
+- uid: Niche.GherkinSyntax.ThenSyntax`1
+  name: ThenSyntax<C>
+  href: api/Niche.GherkinSyntax.ThenSyntax-1.html
+  commentId: T:Niche.GherkinSyntax.ThenSyntax`1
+  name.vb: ThenSyntax(Of C)
+  fullName: Niche.GherkinSyntax.ThenSyntax<C>
+  fullName.vb: Niche.GherkinSyntax.ThenSyntax(Of C)
+  nameWithType: ThenSyntax<C>
+  nameWithType.vb: ThenSyntax(Of C)
+- uid: Niche.GherkinSyntax.ThenSyntax`1.#ctor(`0)
+  name: ThenSyntax(C)
+  href: api/Niche.GherkinSyntax.ThenSyntax-1.html#Niche_GherkinSyntax_ThenSyntax_1__ctor__0_
+  commentId: M:Niche.GherkinSyntax.ThenSyntax`1.#ctor(`0)
+  fullName: Niche.GherkinSyntax.ThenSyntax<C>.ThenSyntax(C)
+  fullName.vb: Niche.GherkinSyntax.ThenSyntax(Of C).ThenSyntax(C)
+  nameWithType: ThenSyntax<C>.ThenSyntax(C)
+  nameWithType.vb: ThenSyntax(Of C).ThenSyntax(C)
+- uid: Niche.GherkinSyntax.ThenSyntax`1.#ctor*
+  name: ThenSyntax
+  href: api/Niche.GherkinSyntax.ThenSyntax-1.html#Niche_GherkinSyntax_ThenSyntax_1__ctor_
+  commentId: Overload:Niche.GherkinSyntax.ThenSyntax`1.#ctor
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.ThenSyntax<C>.ThenSyntax
+  fullName.vb: Niche.GherkinSyntax.ThenSyntax(Of C).ThenSyntax
+  nameWithType: ThenSyntax<C>.ThenSyntax
+  nameWithType.vb: ThenSyntax(Of C).ThenSyntax
+- uid: Niche.GherkinSyntax.ThenSyntax`1.And(System.Action{`0})
+  name: And(Action<C>)
+  href: api/Niche.GherkinSyntax.ThenSyntax-1.html#Niche_GherkinSyntax_ThenSyntax_1_And_System_Action__0__
+  commentId: M:Niche.GherkinSyntax.ThenSyntax`1.And(System.Action{`0})
+  name.vb: And(Action(Of C))
+  fullName: Niche.GherkinSyntax.ThenSyntax<C>.And(System.Action<C>)
+  fullName.vb: Niche.GherkinSyntax.ThenSyntax(Of C).And(System.Action(Of C))
+  nameWithType: ThenSyntax<C>.And(Action<C>)
+  nameWithType.vb: ThenSyntax(Of C).And(Action(Of C))
+- uid: Niche.GherkinSyntax.ThenSyntax`1.And*
+  name: And
+  href: api/Niche.GherkinSyntax.ThenSyntax-1.html#Niche_GherkinSyntax_ThenSyntax_1_And_
+  commentId: Overload:Niche.GherkinSyntax.ThenSyntax`1.And
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.ThenSyntax<C>.And
+  fullName.vb: Niche.GherkinSyntax.ThenSyntax(Of C).And
+  nameWithType: ThenSyntax<C>.And
+  nameWithType.vb: ThenSyntax(Of C).And
+- uid: Niche.GherkinSyntax.ThenSyntax`1.AndAsync(System.Func{`0,System.Threading.Tasks.Task})
+  name: AndAsync(Func<C, Task>)
+  href: api/Niche.GherkinSyntax.ThenSyntax-1.html#Niche_GherkinSyntax_ThenSyntax_1_AndAsync_System_Func__0_System_Threading_Tasks_Task__
+  commentId: M:Niche.GherkinSyntax.ThenSyntax`1.AndAsync(System.Func{`0,System.Threading.Tasks.Task})
+  name.vb: AndAsync(Func(Of C, Task))
+  fullName: Niche.GherkinSyntax.ThenSyntax<C>.AndAsync(System.Func<C, System.Threading.Tasks.Task>)
+  fullName.vb: Niche.GherkinSyntax.ThenSyntax(Of C).AndAsync(System.Func(Of C, System.Threading.Tasks.Task))
+  nameWithType: ThenSyntax<C>.AndAsync(Func<C, Task>)
+  nameWithType.vb: ThenSyntax(Of C).AndAsync(Func(Of C, Task))
+- uid: Niche.GherkinSyntax.ThenSyntax`1.AndAsync*
+  name: AndAsync
+  href: api/Niche.GherkinSyntax.ThenSyntax-1.html#Niche_GherkinSyntax_ThenSyntax_1_AndAsync_
+  commentId: Overload:Niche.GherkinSyntax.ThenSyntax`1.AndAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.ThenSyntax<C>.AndAsync
+  fullName.vb: Niche.GherkinSyntax.ThenSyntax(Of C).AndAsync
+  nameWithType: ThenSyntax<C>.AndAsync
+  nameWithType.vb: ThenSyntax(Of C).AndAsync
+- uid: Niche.GherkinSyntax.ThenSyntax`1.Context
+  name: Context
+  href: api/Niche.GherkinSyntax.ThenSyntax-1.html#Niche_GherkinSyntax_ThenSyntax_1_Context
+  commentId: P:Niche.GherkinSyntax.ThenSyntax`1.Context
+  fullName: Niche.GherkinSyntax.ThenSyntax<C>.Context
+  fullName.vb: Niche.GherkinSyntax.ThenSyntax(Of C).Context
+  nameWithType: ThenSyntax<C>.Context
+  nameWithType.vb: ThenSyntax(Of C).Context
+- uid: Niche.GherkinSyntax.ThenSyntax`1.Context*
+  name: Context
+  href: api/Niche.GherkinSyntax.ThenSyntax-1.html#Niche_GherkinSyntax_ThenSyntax_1_Context_
+  commentId: Overload:Niche.GherkinSyntax.ThenSyntax`1.Context
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.ThenSyntax<C>.Context
+  fullName.vb: Niche.GherkinSyntax.ThenSyntax(Of C).Context
+  nameWithType: ThenSyntax<C>.Context
+  nameWithType.vb: ThenSyntax(Of C).Context
+- uid: Niche.GherkinSyntax.ThenSyntaxExtensions
+  name: ThenSyntaxExtensions
+  href: api/Niche.GherkinSyntax.ThenSyntaxExtensions.html
+  commentId: T:Niche.GherkinSyntax.ThenSyntaxExtensions
+  fullName: Niche.GherkinSyntax.ThenSyntaxExtensions
+  nameWithType: ThenSyntaxExtensions
+- uid: Niche.GherkinSyntax.ThenSyntaxExtensions.And*
+  name: And
+  href: api/Niche.GherkinSyntax.ThenSyntaxExtensions.html#Niche_GherkinSyntax_ThenSyntaxExtensions_And_
+  commentId: Overload:Niche.GherkinSyntax.ThenSyntaxExtensions.And
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.ThenSyntaxExtensions.And
+  nameWithType: ThenSyntaxExtensions.And
+- uid: Niche.GherkinSyntax.ThenSyntaxExtensions.And``1(System.Threading.Tasks.Task{Niche.GherkinSyntax.IThenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task})
+  name: And<C>(Task<IThenSyntaxAsync<C>>, Func<C, Task>)
+  href: api/Niche.GherkinSyntax.ThenSyntaxExtensions.html#Niche_GherkinSyntax_ThenSyntaxExtensions_And__1_System_Threading_Tasks_Task_Niche_GherkinSyntax_IThenSyntaxAsync___0___System_Func___0_System_Threading_Tasks_Task__
+  commentId: M:Niche.GherkinSyntax.ThenSyntaxExtensions.And``1(System.Threading.Tasks.Task{Niche.GherkinSyntax.IThenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task})
+  name.vb: And(Of C)(Task(Of IThenSyntaxAsync(Of C)), Func(Of C, Task))
+  fullName: Niche.GherkinSyntax.ThenSyntaxExtensions.And<C>(System.Threading.Tasks.Task<Niche.GherkinSyntax.IThenSyntaxAsync<C>>, System.Func<C, System.Threading.Tasks.Task>)
+  fullName.vb: Niche.GherkinSyntax.ThenSyntaxExtensions.And(Of C)(System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IThenSyntaxAsync(Of C)), System.Func(Of C, System.Threading.Tasks.Task))
+  nameWithType: ThenSyntaxExtensions.And<C>(Task<IThenSyntaxAsync<C>>, Func<C, Task>)
+  nameWithType.vb: ThenSyntaxExtensions.And(Of C)(Task(Of IThenSyntaxAsync(Of C)), Func(Of C, Task))
+- uid: Niche.GherkinSyntax.WhenSyntax`1
+  name: WhenSyntax<C>
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html
+  commentId: T:Niche.GherkinSyntax.WhenSyntax`1
+  name.vb: WhenSyntax(Of C)
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C)
+  nameWithType: WhenSyntax<C>
+  nameWithType.vb: WhenSyntax(Of C)
+- uid: Niche.GherkinSyntax.WhenSyntax`1.#ctor(`0)
+  name: WhenSyntax(C)
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1__ctor__0_
+  commentId: M:Niche.GherkinSyntax.WhenSyntax`1.#ctor(`0)
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.WhenSyntax(C)
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).WhenSyntax(C)
+  nameWithType: WhenSyntax<C>.WhenSyntax(C)
+  nameWithType.vb: WhenSyntax(Of C).WhenSyntax(C)
+- uid: Niche.GherkinSyntax.WhenSyntax`1.#ctor*
+  name: WhenSyntax
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1__ctor_
+  commentId: Overload:Niche.GherkinSyntax.WhenSyntax`1.#ctor
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.WhenSyntax
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).WhenSyntax
+  nameWithType: WhenSyntax<C>.WhenSyntax
+  nameWithType.vb: WhenSyntax(Of C).WhenSyntax
+- uid: Niche.GherkinSyntax.WhenSyntax`1.And*
+  name: And
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1_And_
+  commentId: Overload:Niche.GherkinSyntax.WhenSyntax`1.And
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.And
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).And
+  nameWithType: WhenSyntax<C>.And
+  nameWithType.vb: WhenSyntax(Of C).And
+- uid: Niche.GherkinSyntax.WhenSyntax`1.And``1(System.Func{`0,``0})
+  name: And<R>(Func<C, R>)
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1_And__1_System_Func__0___0__
+  commentId: M:Niche.GherkinSyntax.WhenSyntax`1.And``1(System.Func{`0,``0})
+  name.vb: And(Of R)(Func(Of C, R))
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.And<R>(System.Func<C, R>)
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).And(Of R)(System.Func(Of C, R))
+  nameWithType: WhenSyntax<C>.And<R>(Func<C, R>)
+  nameWithType.vb: WhenSyntax(Of C).And(Of R)(Func(Of C, R))
+- uid: Niche.GherkinSyntax.WhenSyntax`1.AndAsync*
+  name: AndAsync
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1_AndAsync_
+  commentId: Overload:Niche.GherkinSyntax.WhenSyntax`1.AndAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.AndAsync
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).AndAsync
+  nameWithType: WhenSyntax<C>.AndAsync
+  nameWithType.vb: WhenSyntax(Of C).AndAsync
+- uid: Niche.GherkinSyntax.WhenSyntax`1.AndAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name: AndAsync<R>(Func<C, Task<R>>)
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1_AndAsync__1_System_Func__0_System_Threading_Tasks_Task___0___
+  commentId: M:Niche.GherkinSyntax.WhenSyntax`1.AndAsync``1(System.Func{`0,System.Threading.Tasks.Task{``0}})
+  name.vb: AndAsync(Of R)(Func(Of C, Task(Of R)))
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.AndAsync<R>(System.Func<C, System.Threading.Tasks.Task<R>>)
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).AndAsync(Of R)(System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  nameWithType: WhenSyntax<C>.AndAsync<R>(Func<C, Task<R>>)
+  nameWithType.vb: WhenSyntax(Of C).AndAsync(Of R)(Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.WhenSyntax`1.Context
+  name: Context
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1_Context
+  commentId: P:Niche.GherkinSyntax.WhenSyntax`1.Context
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.Context
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).Context
+  nameWithType: WhenSyntax<C>.Context
+  nameWithType.vb: WhenSyntax(Of C).Context
+- uid: Niche.GherkinSyntax.WhenSyntax`1.Context*
+  name: Context
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1_Context_
+  commentId: Overload:Niche.GherkinSyntax.WhenSyntax`1.Context
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.Context
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).Context
+  nameWithType: WhenSyntax<C>.Context
+  nameWithType.vb: WhenSyntax(Of C).Context
+- uid: Niche.GherkinSyntax.WhenSyntax`1.Then(System.Action{`0})
+  name: Then(Action<C>)
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1_Then_System_Action__0__
+  commentId: M:Niche.GherkinSyntax.WhenSyntax`1.Then(System.Action{`0})
+  name.vb: Then(Action(Of C))
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.Then(System.Action<C>)
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).Then(System.Action(Of C))
+  nameWithType: WhenSyntax<C>.Then(Action<C>)
+  nameWithType.vb: WhenSyntax(Of C).Then(Action(Of C))
+- uid: Niche.GherkinSyntax.WhenSyntax`1.Then*
+  name: Then
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1_Then_
+  commentId: Overload:Niche.GherkinSyntax.WhenSyntax`1.Then
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.Then
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).Then
+  nameWithType: WhenSyntax<C>.Then
+  nameWithType.vb: WhenSyntax(Of C).Then
+- uid: Niche.GherkinSyntax.WhenSyntax`1.ThenAsync(System.Func{`0,System.Threading.Tasks.Task})
+  name: ThenAsync(Func<C, Task>)
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1_ThenAsync_System_Func__0_System_Threading_Tasks_Task__
+  commentId: M:Niche.GherkinSyntax.WhenSyntax`1.ThenAsync(System.Func{`0,System.Threading.Tasks.Task})
+  name.vb: ThenAsync(Func(Of C, Task))
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.ThenAsync(System.Func<C, System.Threading.Tasks.Task>)
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).ThenAsync(System.Func(Of C, System.Threading.Tasks.Task))
+  nameWithType: WhenSyntax<C>.ThenAsync(Func<C, Task>)
+  nameWithType.vb: WhenSyntax(Of C).ThenAsync(Func(Of C, Task))
+- uid: Niche.GherkinSyntax.WhenSyntax`1.ThenAsync*
+  name: ThenAsync
+  href: api/Niche.GherkinSyntax.WhenSyntax-1.html#Niche_GherkinSyntax_WhenSyntax_1_ThenAsync_
+  commentId: Overload:Niche.GherkinSyntax.WhenSyntax`1.ThenAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.WhenSyntax<C>.ThenAsync
+  fullName.vb: Niche.GherkinSyntax.WhenSyntax(Of C).ThenAsync
+  nameWithType: WhenSyntax<C>.ThenAsync
+  nameWithType.vb: WhenSyntax(Of C).ThenAsync
+- uid: Niche.GherkinSyntax.WhenSyntaxExtensions
+  name: WhenSyntaxExtensions
+  href: api/Niche.GherkinSyntax.WhenSyntaxExtensions.html
+  commentId: T:Niche.GherkinSyntax.WhenSyntaxExtensions
+  fullName: Niche.GherkinSyntax.WhenSyntaxExtensions
+  nameWithType: WhenSyntaxExtensions
+- uid: Niche.GherkinSyntax.WhenSyntaxExtensions.And*
+  name: And
+  href: api/Niche.GherkinSyntax.WhenSyntaxExtensions.html#Niche_GherkinSyntax_WhenSyntaxExtensions_And_
+  commentId: Overload:Niche.GherkinSyntax.WhenSyntaxExtensions.And
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.WhenSyntaxExtensions.And
+  nameWithType: WhenSyntaxExtensions.And
+- uid: Niche.GherkinSyntax.WhenSyntaxExtensions.And``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IWhenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  name: And<C, R>(Task<IWhenSyntaxAsync<C>>, Func<C, Task<R>>)
+  href: api/Niche.GherkinSyntax.WhenSyntaxExtensions.html#Niche_GherkinSyntax_WhenSyntaxExtensions_And__2_System_Threading_Tasks_Task_Niche_GherkinSyntax_IWhenSyntaxAsync___0___System_Func___0_System_Threading_Tasks_Task___1___
+  commentId: M:Niche.GherkinSyntax.WhenSyntaxExtensions.And``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IWhenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  name.vb: And(Of C, R)(Task(Of IWhenSyntaxAsync(Of C)), Func(Of C, Task(Of R)))
+  fullName: Niche.GherkinSyntax.WhenSyntaxExtensions.And<C, R>(System.Threading.Tasks.Task<Niche.GherkinSyntax.IWhenSyntaxAsync<C>>, System.Func<C, System.Threading.Tasks.Task<R>>)
+  fullName.vb: Niche.GherkinSyntax.WhenSyntaxExtensions.And(Of C, R)(System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IWhenSyntaxAsync(Of C)), System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  nameWithType: WhenSyntaxExtensions.And<C, R>(Task<IWhenSyntaxAsync<C>>, Func<C, Task<R>>)
+  nameWithType.vb: WhenSyntaxExtensions.And(Of C, R)(Task(Of IWhenSyntaxAsync(Of C)), Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.WhenSyntaxExtensions.ThenAsync*
+  name: ThenAsync
+  href: api/Niche.GherkinSyntax.WhenSyntaxExtensions.html#Niche_GherkinSyntax_WhenSyntaxExtensions_ThenAsync_
+  commentId: Overload:Niche.GherkinSyntax.WhenSyntaxExtensions.ThenAsync
+  isSpec: "True"
+  fullName: Niche.GherkinSyntax.WhenSyntaxExtensions.ThenAsync
+  nameWithType: WhenSyntaxExtensions.ThenAsync
+- uid: Niche.GherkinSyntax.WhenSyntaxExtensions.ThenAsync``1(System.Threading.Tasks.Task{Niche.GherkinSyntax.IWhenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task})
+  name: ThenAsync<C>(Task<IWhenSyntaxAsync<C>>, Func<C, Task>)
+  href: api/Niche.GherkinSyntax.WhenSyntaxExtensions.html#Niche_GherkinSyntax_WhenSyntaxExtensions_ThenAsync__1_System_Threading_Tasks_Task_Niche_GherkinSyntax_IWhenSyntaxAsync___0___System_Func___0_System_Threading_Tasks_Task__
+  commentId: M:Niche.GherkinSyntax.WhenSyntaxExtensions.ThenAsync``1(System.Threading.Tasks.Task{Niche.GherkinSyntax.IWhenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task})
+  name.vb: ThenAsync(Of C)(Task(Of IWhenSyntaxAsync(Of C)), Func(Of C, Task))
+  fullName: Niche.GherkinSyntax.WhenSyntaxExtensions.ThenAsync<C>(System.Threading.Tasks.Task<Niche.GherkinSyntax.IWhenSyntaxAsync<C>>, System.Func<C, System.Threading.Tasks.Task>)
+  fullName.vb: Niche.GherkinSyntax.WhenSyntaxExtensions.ThenAsync(Of C)(System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IWhenSyntaxAsync(Of C)), System.Func(Of C, System.Threading.Tasks.Task))
+  nameWithType: WhenSyntaxExtensions.ThenAsync<C>(Task<IWhenSyntaxAsync<C>>, Func<C, Task>)
+  nameWithType.vb: WhenSyntaxExtensions.ThenAsync(Of C)(Task(Of IWhenSyntaxAsync(Of C)), Func(Of C, Task))

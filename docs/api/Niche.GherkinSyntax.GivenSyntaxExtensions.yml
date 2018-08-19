@@ -1,0 +1,1113 @@
+### YamlMime:ManagedReference
+items:
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions
+  commentId: T:Niche.GherkinSyntax.GivenSyntaxExtensions
+  id: GivenSyntaxExtensions
+  parent: Niche.GherkinSyntax
+  children:
+  - Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  - Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  - Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync``3(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,``1,System.Threading.Tasks.Task{``2}},``1)
+  langs:
+  - csharp
+  - vb
+  name: GivenSyntaxExtensions
+  nameWithType: GivenSyntaxExtensions
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Niche.GherkinSyntax/GivenSyntaxExtensions.cs
+      branch: feature/api-documentation
+      repo: https://github.com/theunrepentantgeek/Niche.GherkinSyntax.git
+    id: GivenSyntaxExtensions
+    path: ../src/Niche.GherkinSyntax/GivenSyntaxExtensions.cs
+    startLine: 9
+  assemblies:
+  - Niche.GherkinSyntax
+  namespace: Niche.GherkinSyntax
+  summary: "\nExtensions for working with <xref href=\"Niche.GherkinSyntax.IGivenSyntax%601\" data-throw-if-not-resolved=\"false\"></xref> instances\n"
+  example: []
+  syntax:
+    content: public static class GivenSyntaxExtensions
+    content.vb: Public Module GivenSyntaxExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  commentId: M:Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  id: AndAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  isExtensionMethod: true
+  parent: Niche.GherkinSyntax.GivenSyntaxExtensions
+  langs:
+  - csharp
+  - vb
+  name: AndAsync<C, R>(Task<IGivenSyntaxAsync<C>>, Func<C, Task<R>>)
+  nameWithType: GivenSyntaxExtensions.AndAsync<C, R>(Task<IGivenSyntaxAsync<C>>, Func<C, Task<R>>)
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync<C, R>(System.Threading.Tasks.Task<Niche.GherkinSyntax.IGivenSyntaxAsync<C>>, System.Func<C, System.Threading.Tasks.Task<R>>)
+  type: Method
+  source:
+    remote:
+      path: src/Niche.GherkinSyntax/GivenSyntaxExtensions.cs
+      branch: feature/api-documentation
+      repo: https://github.com/theunrepentantgeek/Niche.GherkinSyntax.git
+    id: AndAsync
+    path: ../src/Niche.GherkinSyntax/GivenSyntaxExtensions.cs
+    startLine: 19
+  assemblies:
+  - Niche.GherkinSyntax
+  namespace: Niche.GherkinSyntax
+  summary: "\nConfigure our test context with an additional function\n"
+  example: []
+  syntax:
+    content: public static Task<IGivenSyntaxAsync<R>> AndAsync<C, R>(this Task<IGivenSyntaxAsync<C>> task, Func<C, Task<R>> configure)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{{C}}}
+      description: Task returning our <xref href="Niche.GherkinSyntax.GivenSyntax%601" data-throw-if-not-resolved="false"></xref>.
+    - id: configure
+      type: System.Func{{C},System.Threading.Tasks.Task{{R}}}
+      description: A function to configure the context.
+    typeParameters:
+    - id: C
+      description: Type of context consumed.
+    - id: R
+      description: Type of returned context.
+    return:
+      type: System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{{R}}}
+      description: A syntax implementation for method chaining.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AndAsync(Of C, R)(task As Task(Of IGivenSyntaxAsync(Of C)), configure As Func(Of C, Task(Of R))) As Task(Of IGivenSyntaxAsync(Of R))
+  overload: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync*
+  nameWithType.vb: GivenSyntaxExtensions.AndAsync(Of C, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, Task(Of R)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync(Of C, R)(System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IGivenSyntaxAsync(Of C)), System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  name.vb: AndAsync(Of C, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  commentId: M:Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  id: WhenAsync``2(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  isExtensionMethod: true
+  parent: Niche.GherkinSyntax.GivenSyntaxExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhenAsync<C, R>(Task<IGivenSyntaxAsync<C>>, Func<C, Task<R>>)
+  nameWithType: GivenSyntaxExtensions.WhenAsync<C, R>(Task<IGivenSyntaxAsync<C>>, Func<C, Task<R>>)
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync<C, R>(System.Threading.Tasks.Task<Niche.GherkinSyntax.IGivenSyntaxAsync<C>>, System.Func<C, System.Threading.Tasks.Task<R>>)
+  type: Method
+  source:
+    remote:
+      path: src/Niche.GherkinSyntax/GivenSyntaxExtensions.cs
+      branch: feature/api-documentation
+      repo: https://github.com/theunrepentantgeek/Niche.GherkinSyntax.git
+    id: WhenAsync
+    path: ../src/Niche.GherkinSyntax/GivenSyntaxExtensions.cs
+    startLine: 34
+  assemblies:
+  - Niche.GherkinSyntax
+  namespace: Niche.GherkinSyntax
+  summary: "\nDeclare a function  to be tested\n"
+  example: []
+  syntax:
+    content: public static Task<IWhenSyntaxAsync<R>> WhenAsync<C, R>(this Task<IGivenSyntaxAsync<C>> task, Func<C, Task<R>> function)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{{C}}}
+      description: Task returning our <xref href="Niche.GherkinSyntax.GivenSyntax%601" data-throw-if-not-resolved="false"></xref>.
+    - id: function
+      type: System.Func{{C},System.Threading.Tasks.Task{{R}}}
+      description: A function to take on our context.
+    typeParameters:
+    - id: C
+      description: Type of context consumed.
+    - id: R
+      description: Type of returned context.
+    return:
+      type: System.Threading.Tasks.Task{Niche.GherkinSyntax.IWhenSyntaxAsync{{R}}}
+      description: A syntax implementation for method chaining.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WhenAsync(Of C, R)(task As Task(Of IGivenSyntaxAsync(Of C)), function As Func(Of C, Task(Of R))) As Task(Of IWhenSyntaxAsync(Of R))
+  overload: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync*
+  nameWithType.vb: GivenSyntaxExtensions.WhenAsync(Of C, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, Task(Of R)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync(Of C, R)(System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IGivenSyntaxAsync(Of C)), System.Func(Of C, System.Threading.Tasks.Task(Of R)))
+  name.vb: WhenAsync(Of C, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, Task(Of R)))
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync``3(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,``1,System.Threading.Tasks.Task{``2}},``1)
+  commentId: M:Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync``3(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,``1,System.Threading.Tasks.Task{``2}},``1)
+  id: WhenAsync``3(System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}},System.Func{``0,``1,System.Threading.Tasks.Task{``2}},``1)
+  isExtensionMethod: true
+  parent: Niche.GherkinSyntax.GivenSyntaxExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhenAsync<C, P, R>(Task<IGivenSyntaxAsync<C>>, Func<C, P, Task<R>>, P)
+  nameWithType: GivenSyntaxExtensions.WhenAsync<C, P, R>(Task<IGivenSyntaxAsync<C>>, Func<C, P, Task<R>>, P)
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync<C, P, R>(System.Threading.Tasks.Task<Niche.GherkinSyntax.IGivenSyntaxAsync<C>>, System.Func<C, P, System.Threading.Tasks.Task<R>>, P)
+  type: Method
+  source:
+    remote:
+      path: src/Niche.GherkinSyntax/GivenSyntaxExtensions.cs
+      branch: feature/api-documentation
+      repo: https://github.com/theunrepentantgeek/Niche.GherkinSyntax.git
+    id: WhenAsync
+    path: ../src/Niche.GherkinSyntax/GivenSyntaxExtensions.cs
+    startLine: 60
+  assemblies:
+  - Niche.GherkinSyntax
+  namespace: Niche.GherkinSyntax
+  summary: "\nDeclare a function  to be tested, with a parameter\n"
+  example: []
+  syntax:
+    content: public static Task<IWhenSyntaxAsync<R>> WhenAsync<C, P, R>(this Task<IGivenSyntaxAsync<C>> task, Func<C, P, Task<R>> function, P parameter)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{{C}}}
+      description: Task returning our <xref href="Niche.GherkinSyntax.GivenSyntax%601" data-throw-if-not-resolved="false"></xref>.
+    - id: function
+      type: System.Func{{C},{P},System.Threading.Tasks.Task{{R}}}
+      description: A function to take on our context.
+    - id: parameter
+      type: '{P}'
+      description: Parameter value.
+    typeParameters:
+    - id: C
+      description: Type of context consumed.
+    - id: P
+      description: Type of parameter.
+    - id: R
+      description: Type of returned context.
+    return:
+      type: System.Threading.Tasks.Task{Niche.GherkinSyntax.IWhenSyntaxAsync{{R}}}
+      description: A syntax implementation for method chaining.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WhenAsync(Of C, P, R)(task As Task(Of IGivenSyntaxAsync(Of C)), function As Func(Of C, P, Task(Of R)), parameter As P) As Task(Of IWhenSyntaxAsync(Of R))
+  overload: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync*
+  nameWithType.vb: GivenSyntaxExtensions.WhenAsync(Of C, P, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, P, Task(Of R)), P)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync(Of C, P, R)(System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IGivenSyntaxAsync(Of C)), System.Func(Of C, P, System.Threading.Tasks.Task(Of R)), P)
+  name.vb: WhenAsync(Of C, P, R)(Task(Of IGivenSyntaxAsync(Of C)), Func(Of C, P, Task(Of R)), P)
+references:
+- uid: Niche.GherkinSyntax.IGivenSyntax`1
+  commentId: T:Niche.GherkinSyntax.IGivenSyntax`1
+  name: IGivenSyntax<C>
+  nameWithType: IGivenSyntax<C>
+  fullName: Niche.GherkinSyntax.IGivenSyntax<C>
+  nameWithType.vb: IGivenSyntax(Of C)
+  fullName.vb: Niche.GherkinSyntax.IGivenSyntax(Of C)
+  name.vb: IGivenSyntax(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.IGivenSyntax`1
+    name: IGivenSyntax
+    nameWithType: IGivenSyntax
+    fullName: Niche.GherkinSyntax.IGivenSyntax
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.IGivenSyntax`1
+    name: IGivenSyntax
+    nameWithType: IGivenSyntax
+    fullName: Niche.GherkinSyntax.IGivenSyntax
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax
+  commentId: N:Niche.GherkinSyntax
+  name: Niche.GherkinSyntax
+  nameWithType: Niche.GherkinSyntax
+  fullName: Niche.GherkinSyntax
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Niche.GherkinSyntax.GivenSyntax`1
+  commentId: T:Niche.GherkinSyntax.GivenSyntax`1
+  name: GivenSyntax<C>
+  nameWithType: GivenSyntax<C>
+  fullName: Niche.GherkinSyntax.GivenSyntax<C>
+  nameWithType.vb: GivenSyntax(Of C)
+  fullName.vb: Niche.GherkinSyntax.GivenSyntax(Of C)
+  name.vb: GivenSyntax(Of C)
+  spec.csharp:
+  - uid: Niche.GherkinSyntax.GivenSyntax`1
+    name: GivenSyntax
+    nameWithType: GivenSyntax
+    fullName: Niche.GherkinSyntax.GivenSyntax
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Niche.GherkinSyntax.GivenSyntax`1
+    name: GivenSyntax
+    nameWithType: GivenSyntax
+    fullName: Niche.GherkinSyntax.GivenSyntax
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync*
+  commentId: Overload:Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync
+  name: AndAsync
+  nameWithType: GivenSyntaxExtensions.AndAsync
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions.AndAsync
+- uid: System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{{C}}}
+  commentId: T:System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IGivenSyntaxAsync<C>>
+  nameWithType: Task<IGivenSyntaxAsync<C>>
+  fullName: System.Threading.Tasks.Task<Niche.GherkinSyntax.IGivenSyntaxAsync<C>>
+  nameWithType.vb: Task(Of IGivenSyntaxAsync(Of C))
+  fullName.vb: System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IGivenSyntaxAsync(Of C))
+  name.vb: Task(Of IGivenSyntaxAsync(Of C))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1
+    name: IGivenSyntaxAsync
+    nameWithType: IGivenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IGivenSyntaxAsync
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1
+    name: IGivenSyntaxAsync
+    nameWithType: IGivenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IGivenSyntaxAsync
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{{C},System.Threading.Tasks.Task{{R}}}
+  commentId: T:System.Func{`0,System.Threading.Tasks.Task{``0}}
+  parent: System
+  definition: System.Func`2
+  name: Func<C, Task<R>>
+  nameWithType: Func<C, Task<R>>
+  fullName: System.Func<C, System.Threading.Tasks.Task<R>>
+  nameWithType.vb: Func(Of C, Task(Of R))
+  fullName.vb: System.Func(Of C, System.Threading.Tasks.Task(Of R))
+  name.vb: Func(Of C, Task(Of R))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: R
+    nameWithType: R
+    fullName: R
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{{R}}}
+  commentId: T:System.Threading.Tasks.Task{Niche.GherkinSyntax.IGivenSyntaxAsync{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IGivenSyntaxAsync<R>>
+  nameWithType: Task<IGivenSyntaxAsync<R>>
+  fullName: System.Threading.Tasks.Task<Niche.GherkinSyntax.IGivenSyntaxAsync<R>>
+  nameWithType.vb: Task(Of IGivenSyntaxAsync(Of R))
+  fullName.vb: System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IGivenSyntaxAsync(Of R))
+  name.vb: Task(Of IGivenSyntaxAsync(Of R))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1
+    name: IGivenSyntaxAsync
+    nameWithType: IGivenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IGivenSyntaxAsync
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Niche.GherkinSyntax.IGivenSyntaxAsync`1
+    name: IGivenSyntaxAsync
+    nameWithType: IGivenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IGivenSyntaxAsync
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: R
+    nameWithType: R
+    fullName: R
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync*
+  commentId: Overload:Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync
+  name: WhenAsync
+  nameWithType: GivenSyntaxExtensions.WhenAsync
+  fullName: Niche.GherkinSyntax.GivenSyntaxExtensions.WhenAsync
+- uid: System.Threading.Tasks.Task{Niche.GherkinSyntax.IWhenSyntaxAsync{{R}}}
+  commentId: T:System.Threading.Tasks.Task{Niche.GherkinSyntax.IWhenSyntaxAsync{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IWhenSyntaxAsync<R>>
+  nameWithType: Task<IWhenSyntaxAsync<R>>
+  fullName: System.Threading.Tasks.Task<Niche.GherkinSyntax.IWhenSyntaxAsync<R>>
+  nameWithType.vb: Task(Of IWhenSyntaxAsync(Of R))
+  fullName.vb: System.Threading.Tasks.Task(Of Niche.GherkinSyntax.IWhenSyntaxAsync(Of R))
+  name.vb: Task(Of IWhenSyntaxAsync(Of R))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1
+    name: IWhenSyntaxAsync
+    nameWithType: IWhenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IWhenSyntaxAsync
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Niche.GherkinSyntax.IWhenSyntaxAsync`1
+    name: IWhenSyntaxAsync
+    nameWithType: IWhenSyntaxAsync
+    fullName: Niche.GherkinSyntax.IWhenSyntaxAsync
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: R
+    nameWithType: R
+    fullName: R
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{{C},{P},System.Threading.Tasks.Task{{R}}}
+  commentId: T:System.Func{``0,``1,System.Threading.Tasks.Task{``2}}
+  parent: System
+  definition: System.Func`3
+  name: Func<C, P, Task<R>>
+  nameWithType: Func<C, P, Task<R>>
+  fullName: System.Func<C, P, System.Threading.Tasks.Task<R>>
+  nameWithType.vb: Func(Of C, P, Task(Of R))
+  fullName.vb: System.Func(Of C, P, System.Threading.Tasks.Task(Of R))
+  name.vb: Func(Of C, P, Task(Of R))
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: P
+    nameWithType: P
+    fullName: P
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: R
+    nameWithType: R
+    fullName: R
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: C
+    nameWithType: C
+    fullName: C
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: P
+    nameWithType: P
+    fullName: P
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: R
+    nameWithType: R
+    fullName: R
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{P}'
+  commentId: '!:P'
+  definition: P
+  name: P
+  nameWithType: P
+  fullName: P
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: P
+  commentId: '!:P'
+  name: P
+  nameWithType: P
+  fullName: P
