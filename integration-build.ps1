@@ -1,5 +1,5 @@
 #
-# Build the cross-platform parts of the SDK using dotnet.exe
+# Integration build script
 #
 
 . .\scripts\bootstrap.ps1
