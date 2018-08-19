@@ -11,13 +11,16 @@ properties {
 # Do our integration build 
 Task Integration.Build -Depends Unit.Tests
 
+# Do our formal build
+Task Formal.Build -Depends Unit.Tests, Compile.Docs
+
 ## --------------------------------------------------------------------------------
 ##   Prerequisite Targets
 ## --------------------------------------------------------------------------------
 ## Tasks used to ensure that prerequisites are available when needed. 
 
 Task Requires.DotNetExe {
-    $script:dotnetExe = (get-command dotnet).Path
+    $script:dotnetExe = (get-command dotnet -ErrorAction SilentlyContinue).Path
 
     if ($dotnetExe -eq $null) {
         $script:dotnetExe = resolve-path $env:ProgramFiles\dotnet\dotnet.exe -ErrorAction SilentlyContinue
@@ -28,6 +31,16 @@ Task Requires.DotNetExe {
     }
 
     Write-Output "Dotnet executable: $dotnetExe"
+}
+
+Task Requires.DocFx {
+    $script:docfxExe = (get-command docfx -ErrorAction SilentlyContinue).Path
+
+    if ($docfxExe -eq $null) {
+        throw "Failed to find docfx.exe"
+    }
+
+    Write-Info "docfx executable: $docfx"
 }
 
 ## --------------------------------------------------------------------------------
@@ -85,6 +98,14 @@ Task Unit.Tests -Depends Requires.DotNetExe, Compile {
     }
 }
 
+Task Compile.Docs -Depends Requires.DocFx {
+
+    $project = resolve-path $baseDir\docfx\docfx.json
+    Write-Info "DocFx project is $project"
+
+    & $docfxExe build $project
+}
+
 ## --------------------------------------------------------------------------------
 ##   Support Functions
 ## --------------------------------------------------------------------------------
@@ -102,6 +123,9 @@ function Write-SubtaskName($subtaskName) {
 }
 
 function Write-Info($message) {
-    Write-Host "[!] $message"
+    Write-Host "[i] $message"
 }
 
+function Write-Warning($message) {
+    Write-Host "[!] $message"
+}
