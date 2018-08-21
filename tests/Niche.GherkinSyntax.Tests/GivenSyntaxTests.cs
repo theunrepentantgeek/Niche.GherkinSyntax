@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using FluentAssertions;
 using Xunit;
@@ -59,6 +60,46 @@ namespace Niche.GherkinSyntax.Tests
                 }
 
                 _given.And(Fn);
+                called.Should().BeTrue();
+            }
+        }
+
+        [SuppressMessage(
+            "Class Design",
+            "AV1000:Type name contains the word 'and', which suggests it has multiple purposes",
+            Justification = "The name reflects the method signature being tested")]
+        public class AndWithFuncAndParameter : GivenSyntaxTests
+        {
+            [Fact]
+            public void GivenNullFunc_ThrowsExpectedException()
+            {
+                Func<string, int, int> func = null;
+
+                // ReSharper disable once ExpressionIsAlwaysNull
+                var exception =
+                    Assert.Throws<ArgumentNullException>(
+                        () => _given.And(func, 34));
+                exception.ParamName.Should().Be("configure");
+            }
+
+            [Fact]
+            public void GivenFunc_ReturnsInstance()
+            {
+                var instance = _given.And((name, value) => name + "Foo" + value, 13);
+                instance.Should().NotBeNull();
+            }
+
+            [Fact]
+            public void GivenFunc_CallsFunc()
+            {
+                var called = false;
+                string Fn(string name, int value)
+                {
+                    called = true;
+                    return name + "Foo" + value;
+                }
+
+                _given.And(Fn, 13);
                 called.Should().BeTrue();
             }
         }
@@ -135,6 +176,46 @@ namespace Niche.GherkinSyntax.Tests
                 }
 
                 _given.When(Fn);
+                called.Should().BeTrue();
+            }
+        }
+
+        [SuppressMessage(
+            "Class Design",
+            "AV1000:Type name contains the word 'and', which suggests it has multiple purposes",
+            Justification = "The name reflects the method signature being tested")]
+        public class WhenWithFuncAndParameter : GivenSyntaxTests
+        {
+            [Fact]
+            public void GivenNull_ThrowsExpectedException()
+            {
+                Func<string, int, int> fn = null;
+
+                // ReSharper disable once ExpressionIsAlwaysNull
+                var exception =
+                    Assert.Throws<ArgumentNullException>(
+                            () => _given.When(fn, 13));
+                exception.ParamName.Should().Be("function");
+            }
+
+            [Fact]
+            public void GivenFunction_ReturnsInstance()
+            {
+                var instance = _given.When((name, value) => name.Length * value, 13);
+                instance.Should().NotBeNull();
+            }
+
+            [Fact]
+            public void GivenFunction_CallsFunction()
+            {
+                var called = true;
+                int Fn(string name, int value)
+                {
+                    called = true;
+                    return name.Length * value;
+                }
+
+                _given.When(Fn, 13);
                 called.Should().BeTrue();
             }
         }

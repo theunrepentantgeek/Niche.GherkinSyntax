@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 
 namespace Niche.GherkinSyntax
@@ -7,7 +9,7 @@ namespace Niche.GherkinSyntax
     /// Defines the syntax available after 'Given'
     /// </summary>
     /// <typeparam name="C">Type of context contained.</typeparam>
-    public class GivenSyntax<C> : IGivenSyntax<C>, IGivenSyntaxAsync<C>
+    public sealed class GivenSyntax<C> : IGivenSyntax<C>, IGivenSyntaxAsync<C>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="GivenSyntax{C}"/> class.
@@ -31,6 +33,10 @@ namespace Niche.GherkinSyntax
         /// <typeparam name="R">Type of returned context.</typeparam>
         /// <param name="configure">A function to configure the context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
+        [SuppressMessage(
+            "Maintainability",
+            "AV1551:Method overload should call another overload",
+            Justification = "This is the base method, used to call the method on the syntax implementation within task.")]
         public IGivenSyntax<R> And<R>(Func<C, R> configure)
         {
             if (configure == null)
@@ -40,6 +46,31 @@ namespace Niche.GherkinSyntax
 
             var context = configure(Context);
             return new GivenSyntax<R>(context);
+        }
+
+        /// <summary>
+        /// Configure or transform our test context
+        /// </summary>
+        /// <remarks>
+        /// The func "configure" should return the new effective context.
+        /// </remarks>
+        /// <typeparam name="P">Type of the parameter passed.</typeparam>
+        /// <typeparam name="R">Type of returned context.</typeparam>
+        /// <param name="configure">
+        /// A function to configure or modify the context.
+        /// </param>
+        /// <param name="parameter">
+        /// Parameter value to use when configuring the test context.
+        /// </param>
+        /// <returns>A syntax implementation for method chaining.</returns>
+        public IGivenSyntax<R> And<P, R>(Func<C, P, R> configure, P parameter)
+        {
+            if (configure == null)
+            {
+                throw new ArgumentNullException(nameof(configure));
+            }
+
+            return And(context => configure(context, parameter));
         }
 
         /// <summary>
@@ -71,6 +102,10 @@ namespace Niche.GherkinSyntax
         /// <typeparam name="R">Type of context returned.</typeparam>
         /// <param name="function">A function to take on our context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
+        [SuppressMessage(
+            "Maintainability",
+            "AV1551:Method overload should call another overload",
+            Justification = "This is the base method, used to call the method on the syntax implementation within task.")]
         public IWhenSyntax<R> When<R>(Func<C, R> function)
         {
             if (function == null)
@@ -80,6 +115,26 @@ namespace Niche.GherkinSyntax
 
             var context = function(Context);
             return new WhenSyntax<R>(context);
+        }
+
+        /// <summary>
+        /// Apply a transformation to our original context
+        /// </summary>
+        /// <typeparam name="P">Type of the parameter passed.</typeparam>
+        /// <typeparam name="R">Type of returned context.</typeparam>
+        /// <param name="function">A function to take on our context.</param>
+        /// <param name="parameter">
+        /// Parameter value to use when configuring the test context.
+        /// </param>
+        /// <returns>A syntax implementation for method chaining.</returns>
+        public IWhenSyntax<R> When<P, R>(Func<C, P, R> function, P parameter)
+        {
+            if (function == null)
+            {
+                throw new ArgumentNullException(nameof(function));
+            }
+
+            return When(context => function(context, parameter));
         }
 
         /// <summary>
