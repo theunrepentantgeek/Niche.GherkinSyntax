@@ -53,6 +53,43 @@ namespace Niche.GherkinSyntax.Tests
             }
         }
 
+        public class AndWithParameter : ThenSyntaxTests
+        {
+            [Fact]
+            public void GivenNull_ThrowsExpectedException()
+            {
+                var exception =
+                     Assert.Throws<ArgumentNullException>(
+                        () => _syntax.And(null, 42));
+                exception.ParamName.Should().Be("action");
+            }
+
+            [Fact]
+            public void GivenAction_ReturnsInstance()
+            {
+                void Ac(string context, int value)
+                {
+                }
+
+                var instance = _syntax.And(Ac, 42);
+                instance.Should().NotBeNull();
+            }
+
+            [Fact]
+            public void GivenAction_CallsAction()
+            {
+                var called = false;
+
+                void Ac(string context, int value)
+                {
+                    called = true;
+                }
+
+                _syntax.And(Ac, 42);
+                called.Should().BeTrue();
+            }
+        }
+
         public class AndAsync : ThenSyntaxTests
         {
             [Fact]
