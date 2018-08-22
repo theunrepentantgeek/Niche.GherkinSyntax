@@ -133,5 +133,49 @@ namespace Niche.GherkinSyntax.Tests
                 called.Should().BeTrue();
             }
         }
+
+        public class AndAsyncWithParameter : ThenSyntaxTests
+        {
+            [Fact]
+            public async Task GivenNull_ThrowsExpectedException()
+            {
+                Func<string, int, Task> action = null;
+
+                // ReSharper disable once ExpressionIsAlwaysNull
+                var exception =
+                    await Assert.ThrowsAsync<ArgumentNullException>(
+                            () => _syntax.AndAsync(action, 42))
+                        .ConfigureAwait(false);
+                exception.ParamName.Should().Be("action");
+            }
+
+            [Fact]
+            public async Task GivenAction_ReturnsInstance()
+            {
+                async Task Ac(string context, int value)
+                {
+                    await Task.Yield();
+                }
+
+                var instance = await _syntax.AndAsync(Ac, 42)
+                    .ConfigureAwait(false);
+                instance.Should().NotBeNull();
+            }
+
+            [Fact]
+            public async Task GivenAction_CallsAction()
+            {
+                var called = false;
+                async Task Ac(string context, int value)
+                {
+                    await Task.Yield();
+                    called = true;
+                }
+
+                await _syntax.AndAsync(Ac, 42)
+                    .ConfigureAwait(false);
+                called.Should().BeTrue();
+            }
+        }
     }
 }
