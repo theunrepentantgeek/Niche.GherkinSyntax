@@ -17,10 +17,6 @@ namespace Niche.GherkinSyntax
         /// <param name="task">Task returning our <see cref="GivenSyntax{C}"/>.</param>
         /// <param name="configure">A function to configure the context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        [SuppressMessage(
-            "Maintainability",
-            "AV1551:Method overload should call another overload",
-            Justification = "This is a wrapper method, used to tunnel through the task.")]
         public static async Task<IGivenSyntaxAsync<R>> AndAsync<C, R>(
             this Task<IGivenSyntaxAsync<C>> task, Func<C, Task<R>> configure)
         {
@@ -55,10 +51,6 @@ namespace Niche.GherkinSyntax
         /// <param name="task">Task returning our <see cref="GivenSyntax{C}"/>.</param>
         /// <param name="function">A function to take on our context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        [SuppressMessage(
-            "Maintainability",
-            "AV1551:Method overload should call another overload",
-            Justification = "This is a wrapper method, used to tunnel through the task.")]
         public static async Task<IWhenSyntaxAsync<R>> WhenAsync<C, R>(
             this Task<IGivenSyntaxAsync<C>> task, Func<C, Task<R>> function)
         {

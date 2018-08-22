@@ -32,10 +32,6 @@ namespace Niche.GherkinSyntax
         /// <typeparam name="R">Type of returned context.</typeparam>
         /// <param name="configure">A function to configure the context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        [SuppressMessage(
-            "Maintainability",
-            "AV1551:Method overload should call another overload",
-            Justification = "This is the base method, used to call the method on the syntax implementation within task.")]
         public IGivenSyntax<R> And<R>(Func<C, R> configure)
         {
             if (configure == null)
@@ -83,10 +79,6 @@ namespace Niche.GherkinSyntax
         /// A function to configure or modify the context.
         /// </param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        [SuppressMessage(
-            "Maintainability",
-            "AV1551:Method overload should call another overload",
-            Justification = "This is the base method, used to call the method on the syntax implementation within task.")]
         public async Task<IGivenSyntaxAsync<R>> AndAsync<R>(Func<C, Task<R>> configure)
         {
             if (configure == null)
@@ -131,10 +123,6 @@ namespace Niche.GherkinSyntax
         /// <typeparam name="R">Type of context returned.</typeparam>
         /// <param name="function">A function to take on our context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        [SuppressMessage(
-            "Maintainability",
-            "AV1551:Method overload should call another overload",
-            Justification = "This is the base method, used to call the method on the syntax implementation within task.")]
         public IWhenSyntax<R> When<R>(Func<C, R> function)
         {
             if (function == null)
@@ -172,10 +160,6 @@ namespace Niche.GherkinSyntax
         /// <typeparam name="R">Type of returned context.</typeparam>
         /// <param name="function">A function to take on our context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        [SuppressMessage(
-            "Maintainability",
-            "AV1551:Method overload should call another overload",
-            Justification = "This is the base method, used to call the method on the syntax implementation within task.")]
         public async Task<IWhenSyntaxAsync<R>> WhenAsync<R>(Func<C, Task<R>> function)
         {
             if (function == null)

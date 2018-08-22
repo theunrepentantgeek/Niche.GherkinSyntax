@@ -23,10 +23,6 @@ namespace Niche.GherkinSyntax
         /// <typeparam name="C">Type of context returned.</typeparam>
         /// <param name="createContext">A function to create the test context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        [SuppressMessage(
-            "Maintainability",
-            "AV1551:Method overload should call another overload",
-            Justification = "This is the base method, used to call the method on the syntax implementation within task.")]
         public static async Task<IGivenSyntaxAsync<C>> GivenAsync<C>(
             Func<Task<C>> createContext)
         {
@@ -64,10 +60,6 @@ namespace Niche.GherkinSyntax
         /// <typeparam name="C">Type of context returned.</typeparam>
         /// <param name="createContext">A function to create the test context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        [SuppressMessage(
-            "Maintainability",
-            "AV1551:Method overload should call another overload",
-            Justification = "This is the base method, used to call the method on the syntax implementation within task.")]
         public static IGivenSyntax<C> Given<C>(Func<C> createContext)
         {
             if (createContext == null)
