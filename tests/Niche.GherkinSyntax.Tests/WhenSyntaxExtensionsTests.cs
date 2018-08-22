@@ -47,6 +47,36 @@ namespace Niche.GherkinSyntax.Tests
             }
         }
 
+        public class AndAsyncWithParameter : WhenSyntaxExtensionsTests
+        {
+            [Fact]
+            public async Task GivenNull_ThrowsExpectedException()
+            {
+                Func<string, int, Task<int>> action = null;
+
+                // ReSharper disable once ExpressionIsAlwaysNull
+                var exception =
+                    await Assert.ThrowsAsync<ArgumentNullException>(
+                        () => _taskSyntax.And(action, 42))
+                        .ConfigureAwait(false);
+                exception.ParamName.Should().Be("function");
+            }
+
+            [Fact]
+            public async Task GivenFunction_ReturnsInstance()
+            {
+                async Task<int> Fn(string context, int value)
+                {
+                    await Task.Yield();
+                    return -1;
+                }
+
+                var syntax = await _taskSyntax.And(Fn, 42)
+                    .ConfigureAwait(false);
+                syntax.Should().NotBeNull();
+            }
+        }
+
         public class ThenAction : WhenSyntaxExtensionsTests
         {
             [Fact]
@@ -71,6 +101,35 @@ namespace Niche.GherkinSyntax.Tests
                 }
 
                 var syntax = await _taskSyntax.ThenAsync(Ac)
+                    .ConfigureAwait(false);
+                syntax.Should().NotBeNull();
+            }
+        }
+
+        public class ThenActionWithParameter : WhenSyntaxExtensionsTests
+        {
+            [Fact]
+            public async Task GivenNull_ThrowsExpectedException()
+            {
+                Func<string, int, Task<int>> action = null;
+
+                // ReSharper disable once ExpressionIsAlwaysNull
+                var exception =
+                    await Assert.ThrowsAsync<ArgumentNullException>(
+                        () => _taskSyntax.ThenAsync(action, 42))
+                        .ConfigureAwait(false);
+                exception.ParamName.Should().Be("action");
+            }
+
+            [Fact]
+            public async Task GivenAction_ReturnsInstance()
+            {
+                async Task Ac(string context, int value)
+                {
+                    await Task.Yield();
+                }
+
+                var syntax = await _taskSyntax.ThenAsync(Ac, 42)
                     .ConfigureAwait(false);
                 syntax.Should().NotBeNull();
             }

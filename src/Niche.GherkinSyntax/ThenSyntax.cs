@@ -45,6 +45,25 @@ namespace Niche.GherkinSyntax
         /// Apply another action to our context to verify the state
         /// </summary>
         /// <param name="action">An action to verify state.</param>
+        /// <param name="parameter">
+        /// Parameter value to use when configuring the test context.
+        /// </param>
+        /// <returns>A syntax implementation for method chaining.</returns>
+        public IThenSyntax<C> And<P>(Action<C, P> action, P parameter)
+        {
+            if (action == null)
+            {
+                throw new ArgumentNullException(nameof(action));
+            }
+
+            action(Context, parameter);
+            return this;
+        }
+
+        /// <summary>
+        /// Apply another action to our context to verify the state
+        /// </summary>
+        /// <param name="action">An action to verify state.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
         public async Task<IThenSyntaxAsync<C>> AndAsync(Func<C, Task> action)
         {
@@ -54,6 +73,26 @@ namespace Niche.GherkinSyntax
             }
 
             await action(Context).ConfigureAwait(false);
+            return this;
+        }
+
+        /// <summary>
+        /// Apply another action to our context to verify the state
+        /// </summary>
+        /// <typeparam name="P">Type of the parameter passed.</typeparam>
+        /// <param name="action">An action to verify state.</param>
+        /// <param name="parameter">
+        /// Parameter value to use when configuring the test context.
+        /// </param>
+        /// <returns>A syntax implementation for method chaining.</returns>
+        public async Task<IThenSyntaxAsync<C>> AndAsync<P>(Func<C, P, Task> action, P parameter)
+        {
+            if (action == null)
+            {
+                throw new ArgumentNullException(nameof(action));
+            }
+
+            await action(Context, parameter).ConfigureAwait(false);
             return this;
         }
     }

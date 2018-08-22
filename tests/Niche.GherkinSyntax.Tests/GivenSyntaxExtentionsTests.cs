@@ -47,26 +47,32 @@ namespace Niche.GherkinSyntax.Tests
             }
         }
 
-        public class AndMethod : GivenSyntaxExtentionsTests
+        public class AndAsyncWithParameter : GivenSyntaxExtentionsTests
         {
             [Fact]
-            public void GivenNull_ThrowsExpectedException()
+            public async Task GivenNull_ThrowsExpectedException()
             {
-                Func<string, string> function = null;
+                Func<string, int, Task<string>> function = null;
 
                 // ReSharper disable once ExpressionIsAlwaysNull
                 var exception =
-                    Assert.Throws<ArgumentNullException>(
-                        () => _syntax.And(function));
+                    await Assert.ThrowsAsync<ArgumentNullException>(
+                            () => _taskSyntax.AndAsync(function, 42))
+                        .ConfigureAwait(false);
                 exception.ParamName.Should().Be("configure");
             }
 
             [Fact]
-            public void GivenFunction_ReturnsInstance()
+            public async Task GivenFunction_ReturnsInstance()
             {
-                string Fn(string context) => "result";
+                async Task<string> Fn(string context, int value)
+                {
+                    await Task.Yield();
+                    return "result" + value;
+                }
 
-                var syntax = _syntax.And(Fn);
+                var syntax = await _taskSyntax.AndAsync(Fn, 42)
+                    .ConfigureAwait(false);
                 syntax.Should().NotBeNull();
             }
         }

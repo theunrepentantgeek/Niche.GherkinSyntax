@@ -8,6 +8,11 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage(
+    "Maintainability",
+    "AV1551:Method overload should call another overload",
+    Justification = "This project uses overloads that call member methods.")]
+
+[assembly: SuppressMessage(
     "Naming",
     "AV1755:Name of async method should end with Async or TaskAsync",
     Justification = "The project chooses not to use Async as a suffix to make the API more fluent.")]
@@ -36,7 +41,7 @@ using System.Diagnostics.CodeAnalysis;
     "SA1200:Using directives must be placed correctly",
     Justification = "Using statements belong at the top of the file.")]
 
-[assembly:SuppressMessage(
+[assembly: SuppressMessage(
     "StyleCop.CSharp.NamingRules",
     "SA1309:FieldNamesMustNotBeginWithUnderscore",
     Justification = "This project chooses to use _ to prefix private fields.")]
