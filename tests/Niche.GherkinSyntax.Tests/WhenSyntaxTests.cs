@@ -155,6 +155,52 @@ namespace Niche.GherkinSyntax.Tests
             }
         }
 
+        public class AndAsyncWithParameter : WhenSyntaxTests
+        {
+            [Fact]
+            public async Task GivenNull_ThrowsExpectecException()
+            {
+                Func<string, int, Task<string>> function = null;
+
+                // ReSharper disable once ExpressionIsAlwaysNull
+                var exception =
+                    await Assert.ThrowsAsync<ArgumentNullException>(
+                        () => _syntax.AndAsync(function, 42))
+                        .ConfigureAwait(false);
+                exception.ParamName.Should().Be("function");
+            }
+
+            [Fact]
+            public async Task GivenFunction_ReturnsInstance()
+            {
+                async Task<string> Fn(string context, int value)
+                {
+                    await Task.Yield();
+                    return _context;
+                }
+
+                var instance = await _syntax.AndAsync(Fn, 42)
+                    .ConfigureAwait(false);
+                instance.Should().NotBeNull();
+            }
+
+            [Fact]
+            public async Task GivenFunction_CallsAction()
+            {
+                var called = false;
+                async Task<string> Fn(string context, int value)
+                {
+                    called = true;
+                    await Task.Yield();
+                    return _context;
+                }
+
+                await _syntax.AndAsync(Fn, 42)
+                    .ConfigureAwait(false);
+                called.Should().BeTrue();
+            }
+        }
+
         public class ThenMethod : WhenSyntaxTests
         {
             [Fact]
@@ -258,6 +304,50 @@ namespace Niche.GherkinSyntax.Tests
                 }
 
                 await _syntax.ThenAsync(Ac)
+                    .ConfigureAwait(false);
+                called.Should().BeTrue();
+            }
+        }
+
+        public class ThenAsyncWithParameter : WhenSyntaxTests
+        {
+            [Fact]
+            public async Task GivenNull_ThrowsExpectedException()
+            {
+                Func<string, int, Task> function = null;
+
+                // ReSharper disable once ExpressionIsAlwaysNull
+                var exception =
+                    await Assert.ThrowsAsync<ArgumentNullException>(
+                        () => _syntax.ThenAsync(function, 42))
+                        .ConfigureAwait(false);
+                exception.ParamName.Should().Be("action");
+            }
+
+            [Fact]
+            public async Task GivenAction_ReturnsInstance()
+            {
+                async Task Ac(string context, int value)
+                {
+                    await Task.Yield();
+                }
+
+                var instance = await _syntax.ThenAsync(Ac, 42)
+                    .ConfigureAwait(false);
+                instance.Should().NotBeNull();
+            }
+
+            [Fact]
+            public async Task GivenAction_CallsAction()
+            {
+                var called = false;
+                async Task Ac(string context, int value)
+                {
+                    await Task.Yield();
+                    called = true;
+                }
+
+                await _syntax.ThenAsync(Ac, 42)
                     .ConfigureAwait(false);
                 called.Should().BeTrue();
             }
