@@ -101,6 +101,8 @@ Task Unit.Tests -Depends Requires.DotNetExe, Compile {
 Task Compile.Docs -Depends Requires.DocFx {
 
     $project = resolve-path $baseDir\docfx\docfx.json
+
+    $env:DOCFX_SOURCE_BRANCH_NAME = "master"
     Write-Info "DocFx project is $project"
 
     & $docfxExe build $project

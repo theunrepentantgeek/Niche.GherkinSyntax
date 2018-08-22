@@ -49,6 +49,14 @@
         ]
       }
     ],
+    "globalMetadata": {
+      "_gitContribute": {
+        "branch": "master"
+      },
+      "newFileRepository": {
+        "branch": "master"
+      }
+    },
     "dest": "../docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
