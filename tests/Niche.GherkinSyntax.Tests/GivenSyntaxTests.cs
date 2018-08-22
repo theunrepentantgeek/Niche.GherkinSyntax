@@ -144,6 +144,51 @@ namespace Niche.GherkinSyntax.Tests
             }
         }
 
+        [SuppressMessage(
+            "Class Design",
+            "AV1000:Type name contains the word 'and', which suggests it has multiple purposes",
+            Justification = "The name reflects the method signature being tested")]
+        public class AndAsyncWithFuncAndParameter : GivenSyntaxTests
+        {
+            [Fact]
+            public async Task GivenNullFunc_ThrowsExpectedException()
+            {
+                Func<string, int, Task<int>> func = null;
+
+                // ReSharper disable once ExpressionIsAlwaysNull
+                var exception =
+                    await Assert.ThrowsAsync<ArgumentNullException>(
+                            () => _given.AndAsync(func, 42))
+                        .ConfigureAwait(false);
+                exception.ParamName.Should().Be("configure");
+            }
+
+            [Fact]
+            public async Task GivenFunc_ReturnsInstance()
+            {
+                Task<string> Fn(string name, int value)
+                    => Task.FromResult(name + "Foo" + value);
+                var instance = await _given.AndAsync(Fn, 42)
+                    .ConfigureAwait(false);
+                instance.Should().NotBeNull();
+            }
+
+            [Fact]
+            public async Task GivenFunc_CallsFunc()
+            {
+                var called = false;
+                Task<string> Fn(string name, int value)
+                {
+                    called = true;
+                    return Task.FromResult(name + "Foo" + value);
+                }
+
+                await _given.AndAsync(Fn, 42)
+                    .ConfigureAwait(false);
+                called.Should().BeTrue();
+            }
+        }
+
         public class WhenWithFunc : GivenSyntaxTests
         {
             [Fact]
@@ -261,6 +306,52 @@ namespace Niche.GherkinSyntax.Tests
                 }
 
                 await _given.WhenAsync(Fn)
+                    .ConfigureAwait(false);
+                called.Should().BeTrue();
+            }
+        }
+
+        public class WhenAsyncWithFuncWithParameter : GivenSyntaxTests
+        {
+            [Fact]
+            public async Task GivenNull_ThrowsExpectedException()
+            {
+                Func<string, int, Task<int>> fn = null;
+
+                // ReSharper disable once ExpressionIsAlwaysNull
+                var exception =
+                    await Assert.ThrowsAsync<ArgumentNullException>(
+                            () => _given.WhenAsync(fn, 42))
+                        .ConfigureAwait(false);
+                exception.ParamName.Should().Be("function");
+            }
+
+            [Fact]
+            public async Task GivenFunction_ReturnsInstance()
+            {
+                async Task<int> Fn(string name, int value)
+                {
+                    await Task.Yield();
+                    return name.Length + value;
+                }
+
+                var instance = await _given.WhenAsync(Fn, 42)
+                    .ConfigureAwait(false);
+                instance.Should().NotBeNull();
+            }
+
+            [Fact]
+            public async Task GivenFunction_CallsFunction()
+            {
+                var called = true;
+                async Task<int> Fn(string name, int value)
+                {
+                    called = true;
+                    await Task.Yield();
+                    return name.Length + value;
+                }
+
+                await _given.WhenAsync(Fn, 42)
                     .ConfigureAwait(false);
                 called.Should().BeTrue();
             }

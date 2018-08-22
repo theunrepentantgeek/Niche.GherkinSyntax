@@ -22,7 +22,7 @@ namespace Niche.GherkinSyntax
         IGivenSyntax<R> And<R>(Func<C, R> configure);
 
         /// <summary>
-        /// Configure or transform our test context
+        /// Configure or transform our test context with a parameter
         /// </summary>
         /// <remarks>
         /// The func "configure" should return the new effective context.

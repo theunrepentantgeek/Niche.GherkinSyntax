@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 
@@ -84,6 +83,10 @@ namespace Niche.GherkinSyntax
         /// A function to configure or modify the context.
         /// </param>
         /// <returns>A syntax implementation for method chaining.</returns>
+        [SuppressMessage(
+            "Maintainability",
+            "AV1551:Method overload should call another overload",
+            Justification = "This is the base method, used to call the method on the syntax implementation within task.")]
         public async Task<IGivenSyntaxAsync<R>> AndAsync<R>(Func<C, Task<R>> configure)
         {
             if (configure == null)
@@ -94,6 +97,32 @@ namespace Niche.GherkinSyntax
             var context = await configure(Context)
                 .ConfigureAwait(false);
             return new GivenSyntax<R>(context);
+        }
+
+        /// <summary>
+        /// Configure or transform our test context
+        /// </summary>
+        /// <remarks>
+        /// The func "configure" should return the new effective context.
+        /// </remarks>
+        /// <typeparam name="P">Type of the parameter passed.</typeparam>
+        /// <typeparam name="R">Type of returned context.</typeparam>
+        /// <param name="configure">
+        /// A function to configure or modify the context.
+        /// </param>
+        /// <param name="parameter">
+        /// Parameter value to use when configuring the test context.
+        /// </param>
+        /// <returns>A syntax implementation for method chaining.</returns>
+        public Task<IGivenSyntaxAsync<R>> AndAsync<P, R>(
+            Func<C, P, Task<R>> configure, P parameter)
+        {
+            if (configure == null)
+            {
+                throw new ArgumentNullException(nameof(configure));
+            }
+
+            return AndAsync(context => configure(context, parameter));
         }
 
         /// <summary>
@@ -143,6 +172,10 @@ namespace Niche.GherkinSyntax
         /// <typeparam name="R">Type of returned context.</typeparam>
         /// <param name="function">A function to take on our context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
+        [SuppressMessage(
+            "Maintainability",
+            "AV1551:Method overload should call another overload",
+            Justification = "This is the base method, used to call the method on the syntax implementation within task.")]
         public async Task<IWhenSyntaxAsync<R>> WhenAsync<R>(Func<C, Task<R>> function)
         {
             if (function == null)
@@ -152,6 +185,27 @@ namespace Niche.GherkinSyntax
 
             var context = await function(Context).ConfigureAwait(false);
             return new WhenSyntax<R>(context);
+        }
+
+        /// <summary>
+        /// Apply a transformation to our original context with a parameter
+        /// </summary>
+        /// <typeparam name="P">Type of the parameter passed.</typeparam>
+        /// <typeparam name="R">Type of returned context.</typeparam>
+        /// <param name="function">A function to take on our context.</param>
+        /// <param name="parameter">
+        /// Parameter value to use when configuring the test context.
+        /// </param>
+        /// <returns>A syntax implementation for method chaining.</returns>
+        public Task<IWhenSyntaxAsync<R>> WhenAsync<P, R>(
+            Func<C, P, Task<R>> function, P parameter)
+        {
+            if (function == null)
+            {
+                throw new ArgumentNullException(nameof(function));
+            }
+
+            return WhenAsync(context => function(context, parameter));
         }
     }
 }
