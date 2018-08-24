@@ -27,7 +27,7 @@ namespace Niche.GherkinSyntax.Tests
                 // ReSharper disable once ExpressionIsAlwaysNull
                 var exception =
                     await Assert.ThrowsAsync<ArgumentNullException>(
-                        () => _taskSyntax.And(action))
+                        () => _taskSyntax.AndAsync(action))
                         .ConfigureAwait(false);
                 exception.ParamName.Should().Be("function");
             }
@@ -41,7 +41,7 @@ namespace Niche.GherkinSyntax.Tests
                     return -1;
                 }
 
-                var syntax = await _taskSyntax.And(Fn)
+                var syntax = await _taskSyntax.AndAsync(Fn)
                     .ConfigureAwait(false);
                 syntax.Should().NotBeNull();
             }
@@ -57,7 +57,7 @@ namespace Niche.GherkinSyntax.Tests
                 // ReSharper disable once ExpressionIsAlwaysNull
                 var exception =
                     await Assert.ThrowsAsync<ArgumentNullException>(
-                        () => _taskSyntax.And(action, 42))
+                        () => _taskSyntax.AndAsync(action, 42))
                         .ConfigureAwait(false);
                 exception.ParamName.Should().Be("function");
             }
@@ -71,13 +71,13 @@ namespace Niche.GherkinSyntax.Tests
                     return -1;
                 }
 
-                var syntax = await _taskSyntax.And(Fn, 42)
+                var syntax = await _taskSyntax.AndAsync(Fn, 42)
                     .ConfigureAwait(false);
                 syntax.Should().NotBeNull();
             }
         }
 
-        public class ThenAction : WhenSyntaxExtensionsTests
+        public class ThenAsync : WhenSyntaxExtensionsTests
         {
             [Fact]
             public async Task GivenNull_ThrowsExpectedException()
@@ -106,7 +106,7 @@ namespace Niche.GherkinSyntax.Tests
             }
         }
 
-        public class ThenActionWithParameter : WhenSyntaxExtensionsTests
+        public class ThenAsyncWithParameter : WhenSyntaxExtensionsTests
         {
             [Fact]
             public async Task GivenNull_ThrowsExpectedException()

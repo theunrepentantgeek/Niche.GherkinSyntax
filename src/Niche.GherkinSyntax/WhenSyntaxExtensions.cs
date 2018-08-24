@@ -16,7 +16,7 @@ namespace Niche.GherkinSyntax
         /// <param name="task">Task returning our <see cref="GivenSyntax{C}"/>.</param>
         /// <param name="function">A function to test on our context.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        public static Task<IWhenSyntaxAsync<R>> And<C, R>(
+        public static Task<IWhenSyntaxAsync<R>> AndAsync<C, R>(
             this Task<IWhenSyntaxAsync<C>> task, Func<C, Task<R>> function)
         {
             var syntax = task.Result;
@@ -35,7 +35,7 @@ namespace Niche.GherkinSyntax
         /// Parameter value to use when configuring the test context.
         /// </param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        public static Task<IWhenSyntaxAsync<R>> And<C, P, R>(
+        public static Task<IWhenSyntaxAsync<R>> AndAsync<C, P, R>(
             this Task<IWhenSyntaxAsync<C>> task, Func<C, P, Task<R>> function, P parameter)
         {
             var syntax = task.Result;
