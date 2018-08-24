@@ -116,7 +116,17 @@ Task Unit.Tests -Depends Requires.DotNetExe, Compile {
     }
 }
 
-Task Compile.Docs -Depends Requires.DocFx {
+Task Extract.Metadata -Depends Requires.DocFx {
+
+    $project = resolve-path $baseDir\docfx\docfx.json
+
+    $env:DOCFX_SOURCE_BRANCH_NAME = "master"
+    Write-Info "DocFx project is $project"
+
+    & $docfxExe metadata $project
+}
+
+Task Compile.Docs -Depends Requires.DocFx, Extract.Metadata {
 
     $project = resolve-path $baseDir\docfx\docfx.json
 
