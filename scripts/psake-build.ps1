@@ -133,7 +133,12 @@ Task Compile.Docs -Depends Requires.DocFx {
 formatTaskName { 
     param($taskName) 
 
-    $divider = "-" * ((get-host).UI.RawUI.WindowSize.Width - 2)
+    $width = (get-host).UI.RawUI.WindowSize.Width - 2
+    if ($width -eq $null -or $width -gt 100) {
+        $width = 100
+    }
+
+    $divider = "=" * $width
     return "`r`n$divider`r`n  $taskName`r`n$divider`r`n"
 } 
 
@@ -143,7 +148,7 @@ function Write-SubtaskName($subtaskName) {
 }
 
 function Write-Info($message) {
-    Write-Host "[i] $message"
+    Write-Host "[*] $message"
 }
 
 function Write-Warning($message) {
