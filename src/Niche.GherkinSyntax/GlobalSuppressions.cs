@@ -14,13 +14,8 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage(
     "Naming",
-    "AV1755:Name of async method should end with Async or TaskAsync",
-    Justification = "The project chooses not to use Async as a suffix to make the API more fluent.")]
-
-[assembly: SuppressMessage(
-    "Naming",
     "CA1716:Identifiers should not match keywords",
-    Justification = "This project uses 'When', 'And' and 'Then' on purpose.")]
+    Justification = "This project uses 'When', 'And' and 'Then' to create a fluent API.")]
 
 [assembly: SuppressMessage(
     "Redundancies in Symbol Declarations",
