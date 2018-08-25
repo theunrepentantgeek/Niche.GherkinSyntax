@@ -15,7 +15,7 @@ namespace Niche.GherkinSyntax
         /// <param name="task">Task returning our <see cref="IThenSyntax{C}"/>.</param>
         /// <param name="action">An action to verify state.</param>
         /// <returns>A syntax implementation for method chaining.</returns>
-        public static Task<IThenSyntaxAsync<C>> And<C>(
+        public static Task<IThenSyntaxAsync<C>> AndAsync<C>(
             this Task<IThenSyntaxAsync<C>> task, Func<C, Task> action)
         {
             var syntax = task.Result;

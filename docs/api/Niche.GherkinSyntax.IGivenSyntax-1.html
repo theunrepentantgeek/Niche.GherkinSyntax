@@ -105,7 +105,7 @@
     <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/master/apiSpec/new?filename=Niche_GherkinSyntax_IGivenSyntax_1_And__1_System_Func__0___0__.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.IGivenSyntax%601.And%60%601(System.Func%7B%600%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/feature/api-documentation/src/Niche.GherkinSyntax/IGivenSyntax.cs/#L22">View Source</a>
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/master/src/Niche.GherkinSyntax/IGivenSyntax.cs/#L22">View Source</a>
   </span>
   <a id="Niche_GherkinSyntax_IGivenSyntax_1_And_" data-uid="Niche.GherkinSyntax.IGivenSyntax`1.And*"></a>
   <h4 id="Niche_GherkinSyntax_IGivenSyntax_1_And__1_System_Func__0___0__" data-uid="Niche.GherkinSyntax.IGivenSyntax`1.And``1(System.Func{`0,``0})">And&lt;R&gt;(Func&lt;C, R&gt;)</h4>
@@ -171,10 +171,90 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/master/apiSpec/new?filename=Niche_GherkinSyntax_IGivenSyntax_1_And__2_System_Func__0___0___1____0_.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.IGivenSyntax%601.And%60%602(System.Func%7B%600%2C%60%600%2C%60%601%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/master/src/Niche.GherkinSyntax/IGivenSyntax.cs/#L39">View Source</a>
+  </span>
+  <a id="Niche_GherkinSyntax_IGivenSyntax_1_And_" data-uid="Niche.GherkinSyntax.IGivenSyntax`1.And*"></a>
+  <h4 id="Niche_GherkinSyntax_IGivenSyntax_1_And__2_System_Func__0___0___1____0_" data-uid="Niche.GherkinSyntax.IGivenSyntax`1.And``2(System.Func{`0,``0,``1},``0)">And&lt;P, R&gt;(Func&lt;C, P, R&gt;, P)</h4>
+  <div class="markdown level1 summary"><p>Configure or transform our test context with a parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IGivenSyntax&lt;R&gt; And&lt;P, R&gt;(Func&lt;C, P, R&gt; configure, P parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;C, P, R&gt;</td>
+        <td><span class="parametername">configure</span></td>
+        <td><p>A function to configure or modify the context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">P</span></td>
+        <td><span class="parametername">parameter</span></td>
+        <td><p>Parameter value to use when configuring the test context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Niche.GherkinSyntax.IGivenSyntax-1.html">IGivenSyntax</a>&lt;R&gt;</td>
+        <td><p>A syntax implementation for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">P</span></td>
+        <td><p>Type of the parameter passed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">R</span></td>
+        <td><p>Type of returned context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Niche_GherkinSyntax_IGivenSyntax_1_And__2_System_Func__0___0___1____0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The func &quot;configure&quot; should return the new effective context.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/master/apiSpec/new?filename=Niche_GherkinSyntax_IGivenSyntax_1_When__1_System_Func__0___0__.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.IGivenSyntax%601.When%60%601(System.Func%7B%600%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/feature/api-documentation/src/Niche.GherkinSyntax/IGivenSyntax.cs/#L30">View Source</a>
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/master/src/Niche.GherkinSyntax/IGivenSyntax.cs/#L47">View Source</a>
   </span>
   <a id="Niche_GherkinSyntax_IGivenSyntax_1_When_" data-uid="Niche.GherkinSyntax.IGivenSyntax`1.When*"></a>
   <h4 id="Niche_GherkinSyntax_IGivenSyntax_1_When__1_System_Func__0___0__" data-uid="Niche.GherkinSyntax.IGivenSyntax`1.When``1(System.Func{`0,``0})">When&lt;R&gt;(Func&lt;C, R&gt;)</h4>
@@ -235,6 +315,83 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/master/apiSpec/new?filename=Niche_GherkinSyntax_IGivenSyntax_1_When__2_System_Func__0___0___1____0_.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.IGivenSyntax%601.When%60%602(System.Func%7B%600%2C%60%600%2C%60%601%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/master/src/Niche.GherkinSyntax/IGivenSyntax.cs/#L59">View Source</a>
+  </span>
+  <a id="Niche_GherkinSyntax_IGivenSyntax_1_When_" data-uid="Niche.GherkinSyntax.IGivenSyntax`1.When*"></a>
+  <h4 id="Niche_GherkinSyntax_IGivenSyntax_1_When__2_System_Func__0___0___1____0_" data-uid="Niche.GherkinSyntax.IGivenSyntax`1.When``2(System.Func{`0,``0,``1},``0)">When&lt;P, R&gt;(Func&lt;C, P, R&gt;, P)</h4>
+  <div class="markdown level1 summary"><p>Apply a transformation to our original context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IWhenSyntax&lt;R&gt; When&lt;P, R&gt;(Func&lt;C, P, R&gt; function, P parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;C, P, R&gt;</td>
+        <td><span class="parametername">function</span></td>
+        <td><p>A function to take on our context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">P</span></td>
+        <td><span class="parametername">parameter</span></td>
+        <td><p>Parameter value to use when configuring the test context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Niche.GherkinSyntax.IWhenSyntax-1.html">IWhenSyntax</a>&lt;R&gt;</td>
+        <td><p>A syntax implementation for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">P</span></td>
+        <td><p>Type of the parameter passed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">R</span></td>
+        <td><p>Type of returned context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -246,7 +403,7 @@
                     <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/master/apiSpec/new?filename=Niche_GherkinSyntax_IGivenSyntax_1.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.IGivenSyntax%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/feature/api-documentation/src/Niche.GherkinSyntax/IGivenSyntax.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/master/src/Niche.GherkinSyntax/IGivenSyntax.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

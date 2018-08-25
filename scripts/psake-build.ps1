@@ -9,10 +9,10 @@ properties {
 }
 
 # Do our integration build 
-Task Integration.Build -Depends Unit.Tests
+Task Integration.Build -Depends Clean.SourceFolder, Unit.Tests
 
 # Do our formal build
-Task Formal.Build -Depends Unit.Tests, Compile.Docs
+Task Formal.Build -Depends Clean.SourceFolder, Unit.Tests, Compile.Docs
 
 ## --------------------------------------------------------------------------------
 ##   Prerequisite Targets
@@ -40,7 +40,25 @@ Task Requires.DocFx {
         throw "Failed to find docfx.exe"
     }
 
-    Write-Info "docfx executable: $docfx"
+    Write-Info "docfx executable: $docfxExe"
+}
+
+## --------------------------------------------------------------------------------
+##   Cleaning Targets
+## --------------------------------------------------------------------------------
+## Tasks used to clean up 
+
+Task Clean.SourceFolder {
+
+    Write-Info "Cleaning $srcDir"
+    remove-item $srcDir\*\bin\* -recurse -ErrorAction SilentlyContinue
+    remove-item $srcDir\*\obj\* -recurse -ErrorAction SilentlyContinue
+    remove-item $srcDir\*\publish\* -recurse -ErrorAction SilentlyContinue
+
+    Write-Info "Cleaning $testsDir"
+    remove-item $testsDir\*\bin\* -recurse -ErrorAction SilentlyContinue
+    remove-item $testsDir\*\obj\* -recurse -ErrorAction SilentlyContinue
+    remove-item $testsDir\*\publish\* -recurse -ErrorAction SilentlyContinue
 }
 
 ## --------------------------------------------------------------------------------
@@ -98,7 +116,17 @@ Task Unit.Tests -Depends Requires.DotNetExe, Compile {
     }
 }
 
-Task Compile.Docs -Depends Requires.DocFx {
+Task Extract.Metadata -Depends Requires.DocFx {
+
+    $project = resolve-path $baseDir\docfx\docfx.json
+
+    $env:DOCFX_SOURCE_BRANCH_NAME = "master"
+    Write-Info "DocFx project is $project"
+
+    & $docfxExe metadata $project
+}
+
+Task Compile.Docs -Depends Requires.DocFx, Extract.Metadata {
 
     $project = resolve-path $baseDir\docfx\docfx.json
 
@@ -115,7 +143,12 @@ Task Compile.Docs -Depends Requires.DocFx {
 formatTaskName { 
     param($taskName) 
 
-    $divider = "-" * ((get-host).UI.RawUI.WindowSize.Width - 2)
+    $width = (get-host).UI.RawUI.WindowSize.Width - 2
+    if ($width -eq $null -or $width -gt 100) {
+        $width = 100
+    }
+
+    $divider = "=" * $width
     return "`r`n$divider`r`n  $taskName`r`n$divider`r`n"
 } 
 
@@ -125,7 +158,7 @@ function Write-SubtaskName($subtaskName) {
 }
 
 function Write-Info($message) {
-    Write-Host "[i] $message"
+    Write-Host "[*] $message"
 }
 
 function Write-Warning($message) {

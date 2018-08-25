@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.GherkinFactory.html",
-          "hash": "+RwsejXrM3sf6Ap12LP8WQ=="
+          "hash": "PKKOKmEnmgMFDQkUmrxhrQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.GivenSyntax-1.html",
-          "hash": "93qzaxos+M1JGEgjrj01lg=="
+          "hash": "MaIlkl/bCAAFOVdus1s73Q=="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.GivenSyntaxExtensions.html",
-          "hash": "HYWG0gcRqzxC6rImOYlA8w=="
+          "hash": "umRg8sY+jsw2j+mQbRxP+w=="
         }
       },
       "is_incremental": true,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.IGivenSyntax-1.html",
-          "hash": "fm+Hzos15jKizRHXcvMULA=="
+          "hash": "pNHGAuLhtkSmoF3pL+SGDg=="
         }
       },
       "is_incremental": true,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.IGivenSyntaxAsync-1.html",
-          "hash": "hFvW3TCHXjEsgNmtDr2xeA=="
+          "hash": "1s4nQKy//CmiYCDRJF2XAA=="
         }
       },
       "is_incremental": true,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.IThenSyntax-1.html",
-          "hash": "BNQIgXhaHOo70FCNDfM34Q=="
+          "hash": "Rdd3wNBakLeNkmWbCl6fWg=="
         }
       },
       "is_incremental": true,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.IThenSyntaxAsync-1.html",
-          "hash": "F+iG/UhITg2NJ2dXrGOmag=="
+          "hash": "J/LBI5s9q00xcWlPUhTeBA=="
         }
       },
       "is_incremental": true,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.IWhenSyntax-1.html",
-          "hash": "RJrr5vvtYIyE55viq5Wi/w=="
+          "hash": "vOlzXpC6vnB/Hul7lsYv4A=="
         }
       },
       "is_incremental": true,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.IWhenSyntaxAsync-1.html",
-          "hash": "h9pjCE65kYYipAe4WozoVA=="
+          "hash": "b3DUS7Xxws8w+RuPQpvqVA=="
         }
       },
       "is_incremental": true,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.ThenSyntax-1.html",
-          "hash": "GovKKIADiXfeW9i6wrWzyg=="
+          "hash": "rulUBpUT3DzYJgocc+pRnw=="
         }
       },
       "is_incremental": true,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.ThenSyntaxExtensions.html",
-          "hash": "xHc52IQZu1376Mfodg698A=="
+          "hash": "31m1s8tEZ3mv9JttKpFqzA=="
         }
       },
       "is_incremental": true,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.WhenSyntax-1.html",
-          "hash": "fbZ9ETTwL2p2Z0H38Oj2hQ=="
+          "hash": "unXwuX1n2XL3ZsOEEWI9NQ=="
         }
       },
       "is_incremental": true,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Niche.GherkinSyntax.WhenSyntaxExtensions.html",
-          "hash": "G6vlu2ktdDi7OKDNqBJqkA=="
+          "hash": "bbBRicO3/sJFm1tRB16tSQ=="
         }
       },
       "is_incremental": true,
@@ -168,7 +168,7 @@
           "hash": "PIboC9Trzq8ARhBH2z9y9A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -251,17 +251,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
