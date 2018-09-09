@@ -56,5 +56,24 @@ using static Niche.GherkinSyntax.GherkinFactory;
 
 When called, `Given()` returns an `IGivenSyntax` implementation, defining the available syntax; each call returns another instance, allowing method chaining through to the end.
 
-The *precondition* method `ANewCalculator` is converted into a lambda expression by the C# compiler. The same happens for the *action* methods (`UserEnters`, `UserAdds` and `UserSubtracts`) as well as the *expectation* method `AnswerIs`.
+The *precondition* method `ANewCalculator` is converted into a lambda expression by the C# compiler. The return value from this method is used as the *context* of the test - it carries the state information of the test.
 
+``` csharp
+private static Calculator ANewCalculator() ...
+```
+
+The methods (`UserEnters`, `UserAdds` and `UserSubtracts`) are *action* methods that modify the context of the test.
+
+``` csharp
+private static Calculator UserEnters(Calculator calculator, double value) ...
+private static Calculator UserAdds(Calculator calculator, double value) ...
+private static Calculator UserSubtracts(Calculator calculator, double value) ...
+```
+
+Each action method returns the new context for the next step.
+
+Finally, the *expectation* method `AnswerIs` is used to check that the answer is the one we want.
+
+``` csharp
+private static void AnswerIs(Calculator calculator, double value) ...
+```
