@@ -4,12 +4,12 @@ using System.Threading.Tasks;
 namespace Niche.GherkinSyntax
 {
     /// <summary>
-    /// Extension methods for working with <see cref="IWhenSyntax{C}"/> instances
+    /// Extension methods for working with <see cref="IWhenSyntax{C}"/> instances.
     /// </summary>
     public static class WhenSyntaxExtensions
     {
         /// <summary>
-        /// Apply a function
+        /// Apply a function.
         /// </summary>
         /// <typeparam name="C">Type of context consumed.</typeparam>
         /// <typeparam name="R">Type of context returned.</typeparam>
@@ -24,7 +24,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Apply a function with a parameter
+        /// Apply a function with a parameter.
         /// </summary>
         /// <typeparam name="C">Type of context consumed.</typeparam>
         /// <typeparam name="P">Type of the parameter passed.</typeparam>
@@ -43,7 +43,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Apply a action to our context to verify the state
+        /// Apply a action to our context to verify the state.
         /// </summary>
         /// <typeparam name="C">Type of context.</typeparam>
         /// <param name="task">Task returning our <see cref="GivenSyntax{C}"/>.</param>
@@ -58,7 +58,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Apply a action to our context to verify the state
+        /// Apply a action to our context to verify the state.
         /// </summary>
         /// <typeparam name="C">Type of context.</typeparam>
         /// <typeparam name="P">Type of the parameter passed.</typeparam>

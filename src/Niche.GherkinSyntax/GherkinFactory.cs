@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace Niche.GherkinSyntax
 {
     /// <summary>
-    /// Entry point for creating Gherkin style test statements
+    /// Entry point for creating Gherkin style test statements.
     /// </summary>
     /// <example>
     /// Import this class via <c>using static</c> so that the methods are directly usable
@@ -25,10 +25,10 @@ namespace Niche.GherkinSyntax
     public static class GherkinFactory
     {
         /// <summary>
-        /// Start an asynchronous scenario test, specifying a function that creates the context for the test
+        /// Start an asynchronous scenario test, specifying a function that creates the context for the test.
         /// </summary>
         /// <remarks>
-        /// See <seealso cref="GivenSyntaxExtensions"/> for extension methods that allow method chaning without needing
+        /// See <seealso cref="GivenSyntaxExtensions"/> for extension methods that allow method chaining without needing
         /// to await the task first.
         /// </remarks>
         /// <typeparam name="C">Type of context returned.</typeparam>
@@ -48,10 +48,10 @@ namespace Niche.GherkinSyntax
 
         /// <summary>
         /// Start an asynchronous scenario test, specifying a function that creates the context for the test and a
-        /// parameter for that function
+        /// parameter for that function.
         /// </summary>
         /// <remarks>
-        /// See <seealso cref="GivenSyntaxExtensions"/> for extension methods that allow method chaning without needing
+        /// See <seealso cref="GivenSyntaxExtensions"/> for extension methods that allow method chaining without needing
         /// to await the task first.
         /// </remarks>
         /// <typeparam name="C">Type of context returned.</typeparam>
@@ -71,7 +71,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Start a scenario test, specifying a function that creates the context for the test
+        /// Start a scenario test, specifying a function that creates the context for the test.
         /// </summary>
         /// <typeparam name="C">Type of context returned.</typeparam>
         /// <param name="createContext">A function to create the test context.</param>
@@ -88,7 +88,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Start a scenario test, specifying a function that creates the context for the test
+        /// Start a scenario test, specifying a function that creates the context for the test.
         /// </summary>
         /// <typeparam name="C">Type of context returned.</typeparam>
         /// <typeparam name="P">Type of the parameter passed.</typeparam>

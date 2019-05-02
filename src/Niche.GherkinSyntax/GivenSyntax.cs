@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace Niche.GherkinSyntax
 {
     /// <summary>
-    /// Defines the syntax available after 'Given'
+    /// Defines the syntax available after 'Given'.
     /// </summary>
     /// <typeparam name="C">Type of context contained.</typeparam>
     public sealed class GivenSyntax<C> : IGivenSyntax<C>, IGivenSyntaxAsync<C>
@@ -22,12 +22,12 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Gets the context information wrapped by this syntax instance
+        /// Gets the context information wrapped by this syntax instance.
         /// </summary>
         public C Context { get; }
 
         /// <summary>
-        /// Configure our test context with an additional function
+        /// Configure our test context with an additional function.
         /// </summary>
         /// <typeparam name="R">Type of returned context.</typeparam>
         /// <param name="configure">A function to configure the context.</param>
@@ -44,7 +44,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Configure or transform our test context
+        /// Configure or transform our test context.
         /// </summary>
         /// <remarks>
         /// The func "configure" should return the new effective context.
@@ -69,7 +69,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Configure or transform our test context
+        /// Configure or transform our test context.
         /// </summary>
         /// <remarks>
         /// The func "configure" should return the new effective context.
@@ -92,7 +92,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Configure or transform our test context
+        /// Configure or transform our test context.
         /// </summary>
         /// <remarks>
         /// The func "configure" should return the new effective context.
@@ -118,7 +118,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Declare a function  to be tested
+        /// Declare a function  to be tested.
         /// </summary>
         /// <typeparam name="R">Type of context returned.</typeparam>
         /// <param name="function">A function to take on our context.</param>
@@ -135,7 +135,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Apply a transformation to our original context
+        /// Apply a transformation to our original context.
         /// </summary>
         /// <typeparam name="P">Type of the parameter passed.</typeparam>
         /// <typeparam name="R">Type of returned context.</typeparam>
@@ -155,7 +155,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Apply a transformation to our original context
+        /// Apply a transformation to our original context.
         /// </summary>
         /// <typeparam name="R">Type of returned context.</typeparam>
         /// <param name="function">A function to take on our context.</param>
@@ -172,7 +172,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Apply a transformation to our original context with a parameter
+        /// Apply a transformation to our original context with a parameter.
         /// </summary>
         /// <typeparam name="P">Type of the parameter passed.</typeparam>
         /// <typeparam name="R">Type of returned context.</typeparam>
