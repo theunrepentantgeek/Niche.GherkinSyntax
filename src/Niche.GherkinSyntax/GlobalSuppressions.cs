@@ -14,6 +14,11 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage(
     "Naming",
+    "CA1715:Identifiers should have correct prefix",
+    Justification = "This project uses single capital letters for generic types")]
+
+[assembly: SuppressMessage(
+    "Naming",
     "CA1716:Identifiers should not match keywords",
     Justification = "This project uses 'When', 'And' and 'Then' to create a fluent API.")]
 
@@ -45,3 +50,8 @@ using System.Diagnostics.CodeAnalysis;
     "StyleCop.CSharp.DocumentationRules",
     "SA1633:File must have header",
     Justification = "Source code files files don't need a file header.")]
+
+[assembly: SuppressMessage(
+    "StyleCop.CSharp.NamingRules",
+    "SA1314:Type parameter names should begin with T",
+    Justification = "This project uses single capital letters for generic types")]
