@@ -1,6 +1,6 @@
 # Scenario Testing
 
-[![Build Status](https://unrepentantgeek.visualstudio.com/GerkinSyntax/_apis/build/status/theunrepentantgeek.Niche.GherkinSyntax)](https://unrepentantgeek.visualstudio.com/GerkinSyntax/_build/latest?definitionId=1)
+[![Build Status](https://unrepentantgeek.visualstudio.com/Gherkin%20Syntax/_apis/build/status/theunrepentantgeek.Niche.GherkinSyntax?branchName=develop)](https://unrepentantgeek.visualstudio.com/Gherkin%20Syntax/_build/latest?definitionId=1&branchName=develop)
 
 This is an experiment in creating a Gherkin style syntax for scenario testing within the confines of the C# language.
 
