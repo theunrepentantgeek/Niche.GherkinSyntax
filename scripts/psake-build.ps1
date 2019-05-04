@@ -6,13 +6,14 @@ properties {
     $baseDir = resolve-path ..\
     $srcDir = resolve-path $baseDir\src
     $testsDir = resolve-path $baseDir\tests
+    $buildDir = "$baseDir\build"
 }
 
 # Do our integration build 
-Task Integration.Build -Depends Clean.SourceFolder, Unit.Tests
+Task Integration.Build -Depends Clean.BuildFolder, Clean.SourceFolder, Unit.Tests
 
 # Do our formal build
-Task Formal.Build -Depends Clean.SourceFolder, Unit.Tests, Compile.Docs
+Task Formal.Build -Depends Clean.BuildFolder, Clean.SourceFolder, Unit.Tests, Compile.Docs, Package
 
 ## --------------------------------------------------------------------------------
 ##   Prerequisite Targets
@@ -61,6 +62,14 @@ Task Clean.SourceFolder {
     remove-item $testsDir\*\publish\* -recurse -ErrorAction SilentlyContinue
 }
 
+Task Clean.BuildFolder {
+
+    Write-Info "Cleaning $buildDir"
+    remove-item $buildDir -ErrorAction SilentlyContinue -Force -Recurse
+    mkdir $buildDir -ErrorAction SilentlyContinue | Out-Null
+
+}
+
 ## --------------------------------------------------------------------------------
 ##   Build Targets
 ## --------------------------------------------------------------------------------
@@ -87,6 +96,9 @@ Task Generate.Version {
 
     if ($branch -eq "master") {
         $script:semanticVersion = $version
+    }
+    elseif ($branch -eq "develop") {
+        $script:semanticVersion = "$version-beta.$commit"
     }
     else {
         $semverBranch = $branch -replace "[^A-Za-z0-9-]+", "."
@@ -134,6 +146,14 @@ Task Compile.Docs -Depends Requires.DocFx, Extract.Metadata {
     Write-Info "DocFx project is $project"
 
     & $docfxExe build $project
+}
+
+Task Package -Depends Requires.DotNetExe, Compile {
+
+    $project = resolve-path $srcDir\Niche.GherkinSyntax\*.csproj
+    Write-Info "Project is $project"
+
+    & $dotnetExe pack $project /p:Version=$semanticVersion --no-build -o $buildDir
 }
 
 ## --------------------------------------------------------------------------------
