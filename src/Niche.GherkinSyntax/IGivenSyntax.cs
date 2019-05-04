@@ -3,16 +3,16 @@
 namespace Niche.GherkinSyntax
 {
     /// <summary>
-    /// Defines the syntax available after 'Given'
+    /// Defines the syntax available after 'Given'.
     /// </summary>
     /// <typeparam name="C">Type of context contained.</typeparam>
     public interface IGivenSyntax<C>
     {
         /// <summary>
-        /// Configure or transform our test context
+        /// Configure or transform our test context.
         /// </summary>
         /// <remarks>
-        /// The func "configure" should return the new effective context.
+        /// The parameter <paramref name="configure"/> should return the new effective context.
         /// </remarks>
         /// <typeparam name="R">Type of returned context.</typeparam>
         /// <param name="configure">
@@ -22,10 +22,10 @@ namespace Niche.GherkinSyntax
         IGivenSyntax<R> And<R>(Func<C, R> configure);
 
         /// <summary>
-        /// Configure or transform our test context with a parameter
+        /// Configure or transform our test context with a parameter.
         /// </summary>
         /// <remarks>
-        /// The func "configure" should return the new effective context.
+        /// The parameter <paramref name="configure"/> should return the new effective context.
         /// </remarks>
         /// <typeparam name="P">Type of the parameter passed.</typeparam>
         /// <typeparam name="R">Type of returned context.</typeparam>
@@ -39,7 +39,7 @@ namespace Niche.GherkinSyntax
         IGivenSyntax<R> And<P, R>(Func<C, P, R> configure, P parameter);
 
         /// <summary>
-        /// Apply a transformation to our original context
+        /// Apply a transformation to our original context.
         /// </summary>
         /// <typeparam name="R">Type of returned context.</typeparam>
         /// <param name="function">A function to take on our context.</param>
@@ -47,7 +47,7 @@ namespace Niche.GherkinSyntax
         IWhenSyntax<R> When<R>(Func<C, R> function);
 
         /// <summary>
-        /// Apply a transformation to our original context
+        /// Apply a transformation to our original context.
         /// </summary>
         /// <typeparam name="P">Type of the parameter passed.</typeparam>
         /// <typeparam name="R">Type of returned context.</typeparam>

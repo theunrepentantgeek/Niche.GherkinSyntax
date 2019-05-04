@@ -4,12 +4,12 @@ using System.Threading.Tasks;
 namespace Niche.GherkinSyntax
 {
     /// <summary>
-    /// Extension methods for working with <see cref="IThenSyntax{C}"/> instances
+    /// Extension methods for working with <see cref="IThenSyntax{C}"/> instances.
     /// </summary>
     public static class ThenSyntaxExtensions
     {
         /// <summary>
-        /// Apply another action to our context to verify the state
+        /// Apply another action to our context to verify the state.
         /// </summary>
         /// <typeparam name="C">Type of context.</typeparam>
         /// <param name="task">Task returning our <see cref="IThenSyntax{C}"/>.</param>

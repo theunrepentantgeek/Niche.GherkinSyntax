@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 namespace Niche.GherkinSyntax
 {
     /// <summary>
-    /// Extensions for working with <see cref="IGivenSyntax{C}"/> instances
+    /// Extensions for working with <see cref="IGivenSyntax{C}"/> instances.
     /// </summary>
     public static class GivenSyntaxExtensions
     {
         /// <summary>
-        /// Configure our test context with an additional function
+        /// Configure our test context with an additional function.
         /// </summary>
         /// <typeparam name="C">Type of context consumed.</typeparam>
         /// <typeparam name="R">Type of returned context.</typeparam>
@@ -25,7 +25,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Configure our test context with an additional function and a parameter
+        /// Configure our test context with an additional function and a parameter.
         /// </summary>
         /// <typeparam name="C">Type of context consumed.</typeparam>
         /// <typeparam name="P">Type of the parameter passed.</typeparam>
@@ -44,7 +44,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Declare a function  to be tested
+        /// Declare a function  to be tested.
         /// </summary>
         /// <typeparam name="C">Type of context consumed.</typeparam>
         /// <typeparam name="R">Type of returned context.</typeparam>
@@ -64,7 +64,7 @@ namespace Niche.GherkinSyntax
         }
 
         /// <summary>
-        /// Declare a function  to be tested, with a parameter
+        /// Declare a function  to be tested, with a parameter.
         /// </summary>
         /// <typeparam name="C">Type of context consumed.</typeparam>
         /// <typeparam name="P">Type of parameter.</typeparam>

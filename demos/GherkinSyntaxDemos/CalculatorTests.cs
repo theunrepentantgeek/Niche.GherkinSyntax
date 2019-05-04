@@ -24,7 +24,7 @@ namespace GherkinSyntaxDemos
 
         private static Calculator UserEnters(Calculator calculator, double value)
         {
-             calculator.Enter(value);
+            calculator.Enter(value);
             return calculator;
         }
 
