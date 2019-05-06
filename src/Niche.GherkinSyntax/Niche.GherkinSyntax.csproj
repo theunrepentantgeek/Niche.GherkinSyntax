@@ -9,6 +9,16 @@
     <NoWarn>NU5105</NoWarn>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <Title>Niche Gherkin Syntax for Testing</Title>
+    <Description>A library for expressing Gherkin style Given-When-Then tests in native C# syntax.</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
