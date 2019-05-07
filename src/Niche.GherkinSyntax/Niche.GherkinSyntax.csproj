@@ -1,18 +1,22 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <DocumentationFile>bin\Debug\netstandard2.0\Niche.ScenarioTesting.xml</DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
-    <NoWarn>NU5105</NoWarn>
   </PropertyGroup>
 
+  <!-- Nuget Specific Properties -->
   <PropertyGroup>
     <Title>Niche Gherkin Syntax for Testing</Title>
     <Description>A library for expressing Gherkin style Given-When-Then tests in native C# syntax.</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageId>Niche.GherkinSyntax</PackageId>
+    <DocumentationFile>bin\Debug\netstandard2.0\Niche.ScenarioTesting.xml</DocumentationFile>
+    <NoWarn>NU5105</NoWarn>
+    <PackageTags>test;testing;fluent;framework;gherkin;bdd</PackageTags>
+    <Authors>TheUnrepentantGeek</Authors>
   </PropertyGroup>
 
   <ItemGroup>
