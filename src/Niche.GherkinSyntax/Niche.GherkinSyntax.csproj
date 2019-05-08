@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
-    <None Include="..\..\Readme.md" Pack="true" PackagePath="" />
+    <None Include="Readme.txt" Pack="true" PackagePath="." />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
