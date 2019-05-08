@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -17,10 +17,13 @@
     <NoWarn>NU5105</NoWarn>
     <PackageTags>test;testing;fluent;framework;gherkin;bdd</PackageTags>
     <Authors>TheUnrepentantGeek</Authors>
+    <PackageProjectUrl>https://github.com/theunrepentantgeek/Niche.GherkinSyntax</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/theunrepentantgeek/Niche.GherkinSyntax</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\LICENSE" Pack="true" PackagePath=""/>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+    <None Include="..\..\Readme.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
