@@ -8,14 +8,19 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage(
+    "Maintainability",
+    "AV1551:Method overload should call another overload",
+    Justification = "This project uses overloads that call member methods.")]
+
+[assembly: SuppressMessage(
     "Naming",
-    "AV1755:Name of async method should end with Async or TaskAsync",
-    Justification = "The project chooses not to use Async as a suffix to make the API more fluent.")]
+    "CA1715:Identifiers should have correct prefix",
+    Justification = "This project uses single capital letters for generic types")]
 
 [assembly: SuppressMessage(
     "Naming",
     "CA1716:Identifiers should not match keywords",
-    Justification = "This project uses 'When', 'And' and 'Then' on purpose.")]
+    Justification = "This project uses 'When', 'And' and 'Then' to create a fluent API.")]
 
 [assembly: SuppressMessage(
     "Redundancies in Symbol Declarations",
@@ -36,7 +41,7 @@ using System.Diagnostics.CodeAnalysis;
     "SA1200:Using directives must be placed correctly",
     Justification = "Using statements belong at the top of the file.")]
 
-[assembly:SuppressMessage(
+[assembly: SuppressMessage(
     "StyleCop.CSharp.NamingRules",
     "SA1309:FieldNamesMustNotBeginWithUnderscore",
     Justification = "This project chooses to use _ to prefix private fields.")]
@@ -45,3 +50,8 @@ using System.Diagnostics.CodeAnalysis;
     "StyleCop.CSharp.DocumentationRules",
     "SA1633:File must have header",
     Justification = "Source code files files don't need a file header.")]
+
+[assembly: SuppressMessage(
+    "StyleCop.CSharp.NamingRules",
+    "SA1314:Type parameter names should begin with T",
+    Justification = "This project uses single capital letters for generic types")]

@@ -111,18 +111,23 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class GherkinFactory</code></pre>
   </div>
-  <h5 id="Niche_GherkinSyntax_GherkinFactory_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Recommend use of a <code>using static</code> reference so that the Given method
-can be used directly in test code.</p>
-</div>
+  <h5 id="Niche_GherkinSyntax_GherkinFactory_examples"><strong>Examples</strong></h5>
+  <p>Import this class via <code>using static</code> so that the methods are directly usable
+without needing to specify <code>GherkinFactory.</code> as a prefix.</p>
+<pre><code>using static Niche.GherkinSyntax.GherkinFactory;
+
+[Fact]
+public void CanDoBasicAddition()
+    => Given(ANewCalculator) ...</code></pre>
+
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/feature/api-documentation/apiSpec/new?filename=Niche_GherkinSyntax_GherkinFactory_Given__1_System_Func___0__.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.GherkinFactory.Given%60%601(System.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/master/apiSpec/new?filename=Niche_GherkinSyntax_GherkinFactory_Given__1_System_Func___0__.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.GherkinFactory.Given%60%601(System.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/feature/api-documentation/src/Niche.GherkinSyntax/GherkinFactory.cs/#L43">View Source</a>
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/master/src/Niche.GherkinSyntax/GherkinFactory.cs/#L79">View Source</a>
   </span>
   <a id="Niche_GherkinSyntax_GherkinFactory_Given_" data-uid="Niche.GherkinSyntax.GherkinFactory.Given*"></a>
   <h4 id="Niche_GherkinSyntax_GherkinFactory_Given__1_System_Func___0__" data-uid="Niche.GherkinSyntax.GherkinFactory.Given``1(System.Func{``0})">Given&lt;C&gt;(Func&lt;C&gt;)</h4>
@@ -185,14 +190,91 @@ can be used directly in test code.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/feature/api-documentation/apiSpec/new?filename=Niche_GherkinSyntax_GherkinFactory_GivenAsync__1_System_Func_System_Threading_Tasks_Task___0___.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.GherkinFactory.GivenAsync%60%601(System.Func%7BSystem.Threading.Tasks.Task%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/master/apiSpec/new?filename=Niche_GherkinSyntax_GherkinFactory_Given__2_System_Func___1___0____1_.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.GherkinFactory.Given%60%602(System.Func%7B%60%601%2C%60%600%7D%2C%60%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/feature/api-documentation/src/Niche.GherkinSyntax/GherkinFactory.cs/#L26">View Source</a>
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/master/src/Niche.GherkinSyntax/GherkinFactory.cs/#L98">View Source</a>
+  </span>
+  <a id="Niche_GherkinSyntax_GherkinFactory_Given_" data-uid="Niche.GherkinSyntax.GherkinFactory.Given*"></a>
+  <h4 id="Niche_GherkinSyntax_GherkinFactory_Given__2_System_Func___1___0____1_" data-uid="Niche.GherkinSyntax.GherkinFactory.Given``2(System.Func{``1,``0},``1)">Given&lt;C, P&gt;(Func&lt;P, C&gt;, P)</h4>
+  <div class="markdown level1 summary"><p>Start a scenario test, specifying a function that creates the context for the test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGivenSyntax&lt;C&gt; Given&lt;C, P&gt;(Func&lt;P, C&gt; createContext, P parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;P, C&gt;</td>
+        <td><span class="parametername">createContext</span></td>
+        <td><p>A function to create the test context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">P</span></td>
+        <td><span class="parametername">parameter</span></td>
+        <td><p>Parameter value to use when creating the test context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Niche.GherkinSyntax.IGivenSyntax-1.html">IGivenSyntax</a>&lt;C&gt;</td>
+        <td><p>A syntax implementation for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">C</span></td>
+        <td><p>Type of context returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">P</span></td>
+        <td><p>Type of the parameter passed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/master/apiSpec/new?filename=Niche_GherkinSyntax_GherkinFactory_GivenAsync__1_System_Func_System_Threading_Tasks_Task___0___.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.GherkinFactory.GivenAsync%60%601(System.Func%7BSystem.Threading.Tasks.Task%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/master/src/Niche.GherkinSyntax/GherkinFactory.cs/#L37">View Source</a>
   </span>
   <a id="Niche_GherkinSyntax_GherkinFactory_GivenAsync_" data-uid="Niche.GherkinSyntax.GherkinFactory.GivenAsync*"></a>
   <h4 id="Niche_GherkinSyntax_GherkinFactory_GivenAsync__1_System_Func_System_Threading_Tasks_Task___0___" data-uid="Niche.GherkinSyntax.GherkinFactory.GivenAsync``1(System.Func{System.Threading.Tasks.Task{``0}})">GivenAsync&lt;C&gt;(Func&lt;Task&lt;C&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Start a scenario test, specifying a function that creates the context for the test</p>
+  <div class="markdown level1 summary"><p>Start an asynchronous scenario test, specifying a function that creates the context for the test</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -228,7 +310,7 @@ can be used directly in test code.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Niche.GherkinSyntax.IGivenSyntaxAsync-1.html">IGivenSyntaxAsync</a>&lt;C&gt;&gt;</td>
-        <td><p>A syntax implementation for method chaining.</p>
+        <td><p>A task returning a syntax implementation for method chaining.</p>
 </td>
       </tr>
     </tbody>
@@ -249,6 +331,92 @@ can be used directly in test code.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Niche_GherkinSyntax_GherkinFactory_GivenAsync__1_System_Func_System_Threading_Tasks_Task___0____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a class="xref" href="Niche.GherkinSyntax.GivenSyntaxExtensions.html">GivenSyntaxExtensions</a> for extension methods that allow method chaning without needing
+to await the task first.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/master/apiSpec/new?filename=Niche_GherkinSyntax_GherkinFactory_GivenAsync__2_System_Func___1_System_Threading_Tasks_Task___0_____1_.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.GherkinFactory.GivenAsync%60%602(System.Func%7B%60%601%2CSystem.Threading.Tasks.Task%7B%60%600%7D%7D%2C%60%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/master/src/Niche.GherkinSyntax/GherkinFactory.cs/#L62">View Source</a>
+  </span>
+  <a id="Niche_GherkinSyntax_GherkinFactory_GivenAsync_" data-uid="Niche.GherkinSyntax.GherkinFactory.GivenAsync*"></a>
+  <h4 id="Niche_GherkinSyntax_GherkinFactory_GivenAsync__2_System_Func___1_System_Threading_Tasks_Task___0_____1_" data-uid="Niche.GherkinSyntax.GherkinFactory.GivenAsync``2(System.Func{``1,System.Threading.Tasks.Task{``0}},``1)">GivenAsync&lt;C, P&gt;(Func&lt;P, Task&lt;C&gt;&gt;, P)</h4>
+  <div class="markdown level1 summary"><p>Start an asynchronous scenario test, specifying a function that creates the context for the test and a
+parameter for that function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;IGivenSyntaxAsync&lt;C&gt;&gt; GivenAsync&lt;C, P&gt;(Func&lt;P, Task&lt;C&gt;&gt; createContext, P parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;P, <span class="xref">System.Threading.Tasks.Task</span>&lt;C&gt;&gt;</td>
+        <td><span class="parametername">createContext</span></td>
+        <td><p>A function to create the test context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">P</span></td>
+        <td><span class="parametername">parameter</span></td>
+        <td><p>Parameter value to use when creating the test context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Niche.GherkinSyntax.IGivenSyntaxAsync-1.html">IGivenSyntaxAsync</a>&lt;C&gt;&gt;</td>
+        <td><p>A syntax implementation for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">C</span></td>
+        <td><p>Type of context returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">P</span></td>
+        <td><p>Type of parameter passed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Niche_GherkinSyntax_GherkinFactory_GivenAsync__2_System_Func___1_System_Threading_Tasks_Task___0_____1__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a class="xref" href="Niche.GherkinSyntax.GivenSyntaxExtensions.html">GivenSyntaxExtensions</a> for extension methods that allow method chaning without needing
+to await the task first.</p>
+</div>
 </article>
           </div>
           
@@ -257,10 +425,10 @@ can be used directly in test code.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/feature/api-documentation/apiSpec/new?filename=Niche_GherkinSyntax_GherkinFactory.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.GherkinFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/new/master/apiSpec/new?filename=Niche_GherkinSyntax_GherkinFactory.md&amp;value=---%0Auid%3A%20Niche.GherkinSyntax.GherkinFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/feature/api-documentation/src/Niche.GherkinSyntax/GherkinFactory.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/theunrepentantgeek/Niche.GherkinSyntax/blob/master/src/Niche.GherkinSyntax/GherkinFactory.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

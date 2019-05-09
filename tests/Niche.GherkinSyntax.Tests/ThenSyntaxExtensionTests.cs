@@ -27,7 +27,7 @@ namespace Niche.GherkinSyntax.Tests
                 // ReSharper disable once ExpressionIsAlwaysNull
                 var exception =
                     await Assert.ThrowsAsync<ArgumentNullException>(
-                            () => _taskSyntax.And(action))
+                            () => _taskSyntax.AndAsync(action))
                         .ConfigureAwait(false);
                 exception.ParamName.Should().Be("action");
             }
@@ -40,7 +40,7 @@ namespace Niche.GherkinSyntax.Tests
                     await Task.Yield();
                 }
 
-                var syntax = await _taskSyntax.And(Ac)
+                var syntax = await _taskSyntax.AndAsync(Ac)
                     .ConfigureAwait(false);
                 syntax.Should().NotBeNull();
             }
